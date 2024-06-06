@@ -1,6 +1,5 @@
 package com.entity;
 
-
 /**
  * @ClassName Users
  * @Description 用户模块实体层
