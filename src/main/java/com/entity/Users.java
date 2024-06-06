@@ -8,8 +8,6 @@ package com.entity;
 public class Users {
     //id列
     private Integer id;
-
-
     //用户名称
     private String loginname;
     //密码
