@@ -1,0 +1,59 @@
+# 项目信息配置
+project:
+  name: snackshop
+  version: 1.0.0
+  env: development
+
+# WEB服务器配置
+server:
+  #端口
+  port: 8090
+  servlet:
+    #上下文路径
+    context-path: /snackshop
+
+spring:
+  # 数据源配置
+  datasource:
+    # 数据库
+    url: jdbc:mysql://localhost:3306/gouwulingshispr97023?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+    # 数据库用户名，需要改成你自己的
+    username: root
+    # 数据库密码，需要改成你自己的
+    password: 123456
+    # 数据库驱动按实际选择，默认是mysql8 ：com.mysql.cj.jdbc.Driver(mysql8) 、 com.mysql.jdbc.Driver(mysql8)
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+  # JSON返回配置
+  jackson:
+    # 默认时区
+    time-zone: GMT+8
+    # 默认日期格式化
+    date-format: yyyy-MM-dd HH:mm:ss
+  # 静态资源配置
+  resources:
+    static-locations: classpath:/static/
+  # Thymeleaf配置
+  thymeleaf:
+    cache: false
+  servlet:
+    multipart:
+      #上传文件时单个文件大小配置
+      max-file-size: 50MB
+      #总上传文件大小配置
+      max-request-size: 50MB
+
+# MyBatis配置
+mybatis:
+  mapper-locations: classpath:/mappers/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+
+# 日志配置
+logback:
+  level: INFO
+  appender: ${project.env}
+# dao层的日志设置为debug，方便查看sql
+logging:
+  level:
+    com.dao: debug

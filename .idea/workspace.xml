@@ -4,17 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0d52ce9-a685-40d1-963b-387a87f379d8" name="Changes" comment="second test">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="a0d52ce9-a685-40d1-963b-387a87f379d8" name="Changes" comment="ideal test">
       <change afterPath="$PROJECT_DIR$/src/main/java/com/SpringbootApplication.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/com/SpringbootSchemaApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/entity/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/entity/Users.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,13 +47,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/entity" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../xiangmu/zongse-springboot-gouwulingshispr97023" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -91,6 +86,9 @@
       <list>
         <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
   </component>
@@ -103,7 +101,10 @@
       <option name="presentableId" value="Default" />
       <updated>1693324174035</updated>
       <workItem from="1717664410192" duration="6508000" />
-      <workItem from="1717682176552" duration="3540000" />
+      <workItem from="1717682176552" duration="5080000" />
+      <workItem from="1717718859004" duration="1568000" />
+      <workItem from="1717723074002" duration="1503000" />
+      <workItem from="1718075877949" duration="1357000" />
     </task>
     <task id="LOCAL-00001" summary="first test">
       <created>1717684218042</created>
@@ -126,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717684873718</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="ideal test">
+      <created>1717685841027</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1717685841027</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,7 +151,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="first_branch" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
@@ -154,10 +162,27 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/master" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first test" />
     <MESSAGE value="second test" />
-    <option name="LAST_COMMIT_MESSAGE" value="second test" />
+    <MESSAGE value="ideal test" />
+    <option name="LAST_COMMIT_MESSAGE" value="ideal test" />
   </component>
 </project>
