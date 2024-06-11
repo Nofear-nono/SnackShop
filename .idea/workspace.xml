@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="878ce77f-1c6f-4680-b7b4-fa7c89a10a29" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/target/classes/com/entity/Users.class" afterDir="false" />
+    <list default="true" id="878ce77f-1c6f-4680-b7b4-fa7c89a10a29" name="Changes" comment="第一版整合">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/entity/UsersExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dao/PaymentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dao/PaymentMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/entity/Dx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/entity/Dx.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/entity/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/entity/Payment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/service/PaymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/service/PaymentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/PaymentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/PaymentMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +56,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\JavaEE\SpringBoot\snackshop\src\main\java\com\entity" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.entity" />
+    </key>
   </component>
   <component name="RunManager" selected="Spring Boot.SpringbootApplication">
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/zongse-springboot-gouwulingshispr97023/springbootzongse/admin/admin/public/index.html" useBuiltInWebServerPort="true">
@@ -97,7 +95,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a0d52ce9-a685-40d1-963b-387a87f379d8" name="Changes" comment="" />
+      <changelist id="878ce77f-1c6f-4680-b7b4-fa7c89a10a29" name="Changes" comment="" />
       <created>1693324174035</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -107,6 +105,7 @@
       <workItem from="1717718859004" duration="1568000" />
       <workItem from="1717723074002" duration="1503000" />
       <workItem from="1718075877949" duration="2005000" />
+      <workItem from="1718087016800" duration="3256000" />
     </task>
     <task id="LOCAL-00001" summary="first test">
       <created>1717684218042</created>
@@ -143,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1718077546596</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="第一版整合">
+      <created>1718087100977</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1718087100977</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,7 +166,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="origin/lzq" />
                       </list>
                     </value>
                   </entry>
@@ -197,6 +203,7 @@
     <MESSAGE value="first test" />
     <MESSAGE value="second test" />
     <MESSAGE value="ideal test" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="第一版整合" />
+    <option name="LAST_COMMIT_MESSAGE" value="第一版整合" />
   </component>
 </project>
