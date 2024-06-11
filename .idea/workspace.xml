@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0d52ce9-a685-40d1-963b-387a87f379d8" name="Changes" comment="ideal test">
+    <list default="true" id="878ce77f-1c6f-4680-b7b4-fa7c89a10a29" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/target/classes/com/entity/Users.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dao/PaymentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dao/PaymentMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/entity/Dx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/entity/Dx.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/entity/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/entity/Payment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/service/PaymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/service/PaymentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/PaymentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/PaymentMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,6 +178,11 @@
             <list>
               <RecentGroup>
                 <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
                   <option value="origin/master" />
                 </option>
               </RecentGroup>
@@ -186,6 +197,6 @@
     <MESSAGE value="first test" />
     <MESSAGE value="second test" />
     <MESSAGE value="ideal test" />
-    <option name="LAST_COMMIT_MESSAGE" value="ideal test" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
 </project>

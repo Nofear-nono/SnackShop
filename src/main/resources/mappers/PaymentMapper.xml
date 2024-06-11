@@ -11,7 +11,6 @@
     <sql id="Base_Column_List" >
         id,  mingcheng
     </sql>
-
     <insert id="insert" parameterType="com.entity.Payment" >
         /**
         获取最后插入的行的自增ID
@@ -29,7 +28,6 @@
     <update id="updateByPrimaryKey" parameterType="com.entity.Payment" >
         update zhifufangshi set mingcheng = #{mingcheng,jdbcType=VARCHAR} where id = #{id,jdbcType=INTEGER}
     </update>
-
     <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
         select <include refid="Base_Column_List" /> from zhifufangshi where id = #{id,jdbcType=INTEGER}
     </select>

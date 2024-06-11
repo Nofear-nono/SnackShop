@@ -1,7 +1,6 @@
 package com.dao;
 
 import com.entity.Payment;
-
 /**
  * @ClassName PaymentMapper
  * @Description 支付方式模块数据持久层

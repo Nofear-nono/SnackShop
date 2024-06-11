@@ -1,5 +1,4 @@
 package com.entity;
-
 /**
  * @ClassName Payment
  * @Description 支付方式模块实体层
