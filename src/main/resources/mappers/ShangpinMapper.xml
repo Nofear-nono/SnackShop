@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dao.ShangpinMapper" >
+  <resultMap id="BaseResultMap" type="com.entity.Shangpin" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="mingcheng" property="mingcheng" jdbcType="VARCHAR" />
+<result column="bianhao" property="bianhao" jdbcType="VARCHAR" />
+<result column="pinleiid" property="pinleiid" jdbcType="INTEGER" />
+<result column="neirong" property="neirong" jdbcType="VARCHAR" />
+<result column="image" property="image" jdbcType="VARCHAR" />
+<result column="yuanshijiage" property="yuanshijiage" jdbcType="INTEGER" />
+<result column="jiage" property="jiage" jdbcType="INTEGER" />
+<result column="danwei" property="danwei" jdbcType="VARCHAR" />
+<result column="shenhe" property="shenhe" jdbcType="VARCHAR" />
+<result column="kucunshuliang" property="kucunshuliang" jdbcType="INTEGER" />
+<result column="xiaoshoushuliang" property="xiaoshoushuliang" jdbcType="INTEGER" />
+
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    id,  mingcheng, bianhao, pinleiid, neirong, image, yuanshijiage, jiage, danwei, shenhe, kucunshuliang, xiaoshoushuliang
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.entity.ShangpinExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from shangpin
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from shangpin
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from shangpin
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.entity.ShangpinExample" >
+    delete from shangpin
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.entity.Shangpin" >
+    <selectKey resultType="java.lang.Integer" keyProperty="id" order="AFTER" >
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into shangpin (mingcheng,bianhao,pinleiid,neirong,image,yuanshijiage,jiage,danwei,shenhe,kucunshuliang,xiaoshoushuliang)
+    values (#{mingcheng,jdbcType=VARCHAR},#{bianhao,jdbcType=VARCHAR},#{pinleiid,jdbcType=INTEGER},#{neirong,jdbcType=VARCHAR},#{image,jdbcType=VARCHAR},#{yuanshijiage,jdbcType=INTEGER},#{jiage,jdbcType=INTEGER},#{danwei,jdbcType=VARCHAR},#{shenhe,jdbcType=VARCHAR},#{kucunshuliang,jdbcType=INTEGER},#{xiaoshoushuliang,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.entity.Shangpin" >
+    <selectKey resultType="java.lang.Integer" keyProperty="id" order="AFTER" >
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into shangpin
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="mingcheng != null" >
+    mingcheng,
+</if>
+<if test="bianhao != null" >
+    bianhao,
+</if>
+<if test="pinleiid != null" >
+    pinleiid,
+</if>
+<if test="neirong != null" >
+    neirong,
+</if>
+<if test="image != null" >
+    image,
+</if>
+<if test="yuanshijiage != null" >
+    yuanshijiage,
+</if>
+<if test="jiage != null" >
+    jiage,
+</if>
+<if test="danwei != null" >
+    danwei,
+</if>
+<if test="shenhe != null" >
+    shenhe,
+</if>
+<if test="kucunshuliang != null" >
+    kucunshuliang,
+</if>
+<if test="xiaoshoushuliang != null" >
+    xiaoshoushuliang,
+</if>
+
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="mingcheng != null" >
+    #{mingcheng,jdbcType=VARCHAR},
+</if>
+<if test="bianhao != null" >
+    #{bianhao,jdbcType=VARCHAR},
+</if>
+<if test="pinleiid != null" >
+    #{pinleiid,jdbcType=INTEGER},
+</if>
+<if test="neirong != null" >
+    #{neirong,jdbcType=VARCHAR},
+</if>
+<if test="image != null" >
+    #{image,jdbcType=VARCHAR},
+</if>
+<if test="yuanshijiage != null" >
+    #{yuanshijiage,jdbcType=INTEGER},
+</if>
+<if test="jiage != null" >
+    #{jiage,jdbcType=INTEGER},
+</if>
+<if test="danwei != null" >
+    #{danwei,jdbcType=VARCHAR},
+</if>
+<if test="shenhe != null" >
+    #{shenhe,jdbcType=VARCHAR},
+</if>
+<if test="kucunshuliang != null" >
+    #{kucunshuliang,jdbcType=INTEGER},
+</if>
+<if test="xiaoshoushuliang != null" >
+    #{xiaoshoushuliang,jdbcType=INTEGER},
+</if>
+
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.entity.ShangpinExample" resultType="java.lang.Integer" >
+    select count(*) from shangpin
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update shangpin
+    <set >
+      <if test="record.id != null" >
+        id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.mingcheng != null" >
+    mingcheng = #{record.mingcheng,jdbcType=VARCHAR},
+</if>
+<if test="record.bianhao != null" >
+    bianhao = #{record.bianhao,jdbcType=VARCHAR},
+</if>
+<if test="record.pinleiid != null" >
+    pinleiid = #{record.pinleiid,jdbcType=INTEGER},
+</if>
+<if test="record.neirong != null" >
+    neirong = #{record.neirong,jdbcType=VARCHAR},
+</if>
+<if test="record.image != null" >
+    image = #{record.image,jdbcType=VARCHAR},
+</if>
+<if test="record.yuanshijiage != null" >
+    yuanshijiage = #{record.yuanshijiage,jdbcType=INTEGER},
+</if>
+<if test="record.jiage != null" >
+    jiage = #{record.jiage,jdbcType=INTEGER},
+</if>
+<if test="record.danwei != null" >
+    danwei = #{record.danwei,jdbcType=VARCHAR},
+</if>
+<if test="record.shenhe != null" >
+    shenhe = #{record.shenhe,jdbcType=VARCHAR},
+</if>
+<if test="record.kucunshuliang != null" >
+    kucunshuliang = #{record.kucunshuliang,jdbcType=INTEGER},
+</if>
+<if test="record.xiaoshoushuliang != null" >
+    xiaoshoushuliang = #{record.xiaoshoushuliang,jdbcType=INTEGER},
+</if>
+
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update shangpin
+    set id = #{record.id,jdbcType=INTEGER},
+      mingcheng = #{record.mingcheng,jdbcType=VARCHAR},bianhao = #{record.bianhao,jdbcType=VARCHAR},pinleiid = #{record.pinleiid,jdbcType=INTEGER},neirong = #{record.neirong,jdbcType=VARCHAR},image = #{record.image,jdbcType=VARCHAR},yuanshijiage = #{record.yuanshijiage,jdbcType=INTEGER},jiage = #{record.jiage,jdbcType=INTEGER},danwei = #{record.danwei,jdbcType=VARCHAR},shenhe = #{record.shenhe,jdbcType=VARCHAR},kucunshuliang = #{record.kucunshuliang,jdbcType=INTEGER},xiaoshoushuliang = #{record.xiaoshoushuliang,jdbcType=INTEGER}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.entity.Shangpin" >
+    update shangpin
+    <set >
+      <if test="mingcheng != null" >
+    mingcheng = #{mingcheng,jdbcType=VARCHAR},
+</if>
+<if test="bianhao != null" >
+    bianhao = #{bianhao,jdbcType=VARCHAR},
+</if>
+<if test="pinleiid != null" >
+    pinleiid = #{pinleiid,jdbcType=INTEGER},
+</if>
+<if test="neirong != null" >
+    neirong = #{neirong,jdbcType=VARCHAR},
+</if>
+<if test="image != null" >
+    image = #{image,jdbcType=VARCHAR},
+</if>
+<if test="yuanshijiage != null" >
+    yuanshijiage = #{yuanshijiage,jdbcType=INTEGER},
+</if>
+<if test="jiage != null" >
+    jiage = #{jiage,jdbcType=INTEGER},
+</if>
+<if test="danwei != null" >
+    danwei = #{danwei,jdbcType=VARCHAR},
+</if>
+<if test="shenhe != null" >
+    shenhe = #{shenhe,jdbcType=VARCHAR},
+</if>
+<if test="kucunshuliang != null" >
+    kucunshuliang = #{kucunshuliang,jdbcType=INTEGER},
+</if>
+<if test="xiaoshoushuliang != null" >
+    xiaoshoushuliang = #{xiaoshoushuliang,jdbcType=INTEGER},
+</if>
+
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.entity.Shangpin" >
+    update shangpin
+    set mingcheng = #{mingcheng,jdbcType=VARCHAR},bianhao = #{bianhao,jdbcType=VARCHAR},pinleiid = #{pinleiid,jdbcType=INTEGER},neirong = #{neirong,jdbcType=VARCHAR},image = #{image,jdbcType=VARCHAR},yuanshijiage = #{yuanshijiage,jdbcType=INTEGER},jiage = #{jiage,jdbcType=INTEGER},danwei = #{danwei,jdbcType=VARCHAR},shenhe = #{shenhe,jdbcType=VARCHAR},kucunshuliang = #{kucunshuliang,jdbcType=INTEGER},xiaoshoushuliang = #{xiaoshoushuliang,jdbcType=INTEGER}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>
