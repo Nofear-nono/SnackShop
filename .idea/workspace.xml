@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0d52ce9-a685-40d1-963b-387a87f379d8" name="Changes" comment="second test">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="a0d52ce9-a685-40d1-963b-387a87f379d8" name="Changes" comment="second test" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,7 +22,7 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="D:\xiangmu\abo-idea-spr\abo-idea\repository" />
-        <option name="mavenHome" value="$PROJECT_DIR$/../abo-idea-spr/abo-idea/apache-maven-3.3.9" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../apache-maven-3.6.3" />
         <option name="userSettingsFile" value="D:\xiangmu\abo-idea-spr\abo-idea\apache-maven-3.3.9\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
