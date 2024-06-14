@@ -5,29 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0d52ce9-a685-40d1-963b-387a87f379d8" name="Changes" comment="lzq第二次提交：售后管理、系统管理">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/service.impl/LiuyanServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/service.impl/PingjiaServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/service.impl/ShenqingServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/admin.admin.src.views.modules.pingjia/chakan.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/admin.admin.src.views.modules.pingjia/chakan.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/admin.admin.src.views.modules.pingjia/chakanmy.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/admin.admin.src.views.modules.pingjia/chakanmy.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/admin.admin.src.views.modules.pingjia/mana.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/admin.admin.src.views.modules.pingjia/mana.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/admin.admin.src.views.modules.pingjia/manamy.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/admin.admin.src.views.modules.pingjia/manamy.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/admin.admin.src.views.modules.pingjia/pingjia-add.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/admin.admin.src.views.modules.pingjia/pingjia-add.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/admin.admin.src.views.modules.pingjia/pingjia-detail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/admin.admin.src.views.modules.pingjia/pingjia-detail.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/admin.admin.src.views.modules.pingjia/pingjia-set.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/admin.admin.src.views.modules.pingjia/pingjia-set.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/admin.admin.src.views.modules.shenqing/chakan.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/admin.admin.src.views.modules.shenqing/chakan.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/admin.admin.src.views.modules.shenqing/chakanmy.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/admin.admin.src.views.modules.shenqing/chakanmy.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/admin.admin.src.views.modules.shenqing/mana.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/admin.admin.src.views.modules.shenqing/mana.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/admin.admin.src.views.modules.shenqing/manamy.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/admin.admin.src.views.modules.shenqing/manamy.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/admin.admin.src.views.modules.shenqing/shenqing-add.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/admin.admin.src.views.modules.shenqing/shenqing-add.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/admin.admin.src.views.modules.shenqing/shenqing-detail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/admin.admin.src.views.modules.shenqing/shenqing-detail.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/admin.admin.src.views.modules.shenqing/shenqing-set.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/admin.admin.src.views.modules.shenqing/shenqing-set.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/front.front.src.pages.pingjia/pingjia-add.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front.front.src.pages.pingjia/pingjia-add.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/front.front.src.pages.pingjia/pingjia-detail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front.front.src.pages.pingjia/pingjia-detail.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/front.front.src.pages.pingjia/pingjia-mana-my.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front.front.src.pages.pingjia/pingjia-mana-my.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/front.front.src.pages.pingjia/pingjia-mana.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front.front.src.pages.pingjia/pingjia-mana.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/front.front.src.pages.shenqing/shenqing-add.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front.front.src.pages.shenqing/shenqing-add.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/front.front.src.pages.shenqing/shenqing-detail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front.front.src.pages.shenqing/shenqing-detail.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/front.front.src.pages.shenqing/shenqing-mana-my.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front.front.src.pages.shenqing/shenqing-mana-my.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/front.front.src.pages.shenqing/shenqing-mana.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front.front.src.pages.shenqing/shenqing-mana.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +94,7 @@
       <workItem from="1718075877949" duration="2005000" />
       <workItem from="1718086058929" duration="215000" />
       <workItem from="1718086322495" duration="4000000" />
-      <workItem from="1718323413855" duration="2607000" />
+      <workItem from="1718323413855" duration="3640000" />
     </task>
     <task id="LOCAL-00001" summary="first test">
       <created>1717684218042</created>
@@ -164,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1718325493589</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="lzq第二次提交：售后管理、系统管理">
+      <created>1718326050498</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1718326050498</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
