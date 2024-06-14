@@ -4,7 +4,7 @@
       <el-breadcrumb :separator="'Ξ'"
         :style='{ "width": "1200px", "margin": "0 auto", "fontSize": "14px", "lineHeight": "1" }'>
         <el-breadcrumb-item>首页</el-breadcrumb-item>
-        <el-breadcrumb-item>评论添加</el-breadcrumb-item>
+        <el-breadcrumb-item>售后申请添加</el-breadcrumb-item>
       </el-breadcrumb>
     </div>
     <div class="detail-preview"
@@ -13,16 +13,19 @@
         <el-form class="add-update-preview" ref="ruleForm" :model="ruleForm" :rules="rules" label-width="100px">
           <el-form-item
           :style='{ "border": "0px solid #dfdfdf", "padding": "10px", "boxShadow": "0px 0px 0px #eee", "margin": "0 0 8px 0", "borderRadius": "8px", "background": "none" }'
-          label="评语" prop="biaoti">
-          <el-input v-model="ruleForm.biaoti" placeholder="评语" clearable :readonly="ro.biaoti"></el-input>
+          label="姓名" prop="xingming">
+          <el-input v-model="ruleForm.xingming" placeholder="姓名" clearable :readonly="ro.xingming"></el-input>
         </el-form-item>
         <el-form-item
           :style='{ "border": "0px solid #dfdfdf", "padding": "10px", "boxShadow": "0px 0px 0px #eee", "margin": "0 0 8px 0", "borderRadius": "8px", "background": "none" }'
-          label="分数（范围1-5）" prop="fenshu">
-          <div :style='{ "bottom": "10px", "position": "absolute" }'>
-            <el-rate v-model="ruleForm.fenshu" :colors="['#99A9BF', '#F7BA2A', '#FF9900']" :texts="['极差', '失望', '一般', '满意', '惊喜']" show-text></el-rate>
-          </div>
-          <!-- <el-input v-model="ruleForm.fenshu" placeholder="分数（范围1-5）" clearable :readonly="ro.fenshu"></el-input> -->
+          label="电话" prop="dianhua">
+          <el-input v-model="ruleForm.dianhua" placeholder="电话" clearable :readonly="ro.dianhua"></el-input>
+        </el-form-item>
+        <el-form-item
+          :style='{ "border": "0px solid #dfdfdf", "padding": "10px", "boxShadow": "0px 0px 0px #eee", "margin": "0 0 8px 0", "borderRadius": "8px", "background": "none" }'
+          label="说明" prop="neirong">
+          <el-input style="min-width: 200px; max-width: 600px;" type="textarea" :rows="8" placeholder="说明" v-model="ruleForm.neirong" :readonly="ro.neirong">
+          </el-input>
         </el-form-item>
         <el-form-item
           :style='{ "border": "0px solid #dfdfdf", "padding": "10px", "boxShadow": "0px 0px 0px #eee", "margin": "0 0 8px 0", "borderRadius": "8px", "background": "none" }'
@@ -31,10 +34,14 @@
               value-format="yyyy-MM-dd HH:mm:ss" placeholder="时间" default-time="12:00:00" :readonly="ro.shijian">
           </el-date-picker>
         </el-form-item>
-        <el-form-item :style='{ "border": "0px solid #dfdfdf", "padding": "10px", "boxShadow": "0px 0px 0px #eee", "margin": "0 0 8px 0", "borderRadius": "8px", "background": "none" }' label="零食" prop="shangpinid">
-          <el-select v-model="ruleForm.shangpinid" placeholder="请选择零食">
-            <el-option v-for="(item, index) in shangpinOptions" v-bind:key="item.id" :label="item.mingcheng"
-              :value="item.id">
+        <el-form-item
+          :style='{ "border": "0px solid #dfdfdf", "padding": "10px", "boxShadow": "0px 0px 0px #eee", "margin": "0 0 8px 0", "borderRadius": "8px", "background": "none" }'
+          label="备注" prop="beizhu">
+          <el-input v-model="ruleForm.beizhu" placeholder="备注" clearable :readonly="ro.beizhu"></el-input>
+        </el-form-item>
+        <el-form-item v-show="false" :style='{ "border": "0px solid #dfdfdf", "padding": "10px", "boxShadow": "0px 0px 0px #eee", "margin": "0 0 8px 0", "borderRadius": "8px", "background": "none" }' label="是否审核" prop="shenhe">
+          <el-select v-model="ruleForm.shenhe">
+            <el-option v-for="(item, index) in shenheOptions" v-bind:key="index" :label="item" :value="item">
             </el-option>
           </el-select>
       </el-form-item>
@@ -42,6 +49,7 @@
           <el-select v-model="users.loginname" disabled>
           </el-select>
       </el-form-item>
+
           <el-form-item :style='{ "padding": "0", "margin": "20px 0 20px 0" }'>
             <el-button class="dy-add-button" type="primary" @click="onSubmit">提交</el-button>
             <el-button class="dy-back-button" @click="back()">返回</el-button>
@@ -62,30 +70,35 @@ export default {
       shenheOptions: [],
       users: { loginname: localStorage.getItem('adminName') },
       ro: {
-        biaoti: false,
-        fenshu: false,
+        xingming: false,
+        dianhua: false,
+        neirong: false,
         shijian: false,
-        shangpinid: false,
+        beizhu: false,
+        shenhe: false,
         usersid: false,
 
       },
       ruleForm: {
-        biaoti: '',
-        fenshu: 0,
+        xingming: '',
+        dianhua: '',
+        neirong: '',
         shijian: this.getCurrentTime(1),
-        shangpinid: '',
+        beizhu: '',
+        shenhe: 'no',
         usersid: localStorage.getItem('usersid'),
 
       },
       rules: {
-        biaoti: [{ required: true, message: '评语不能为空', trigger: 'blur' },],
-        fenshu: [ { validator: this.$validate.isRate, trigger: 'blur' },],
+        xingming: [{ required: true, message: '姓名不能为空', trigger: 'blur' },],
+        dianhua: [{ required: true, message: '电话不能为空', trigger: 'blur' }, { validator: this.$validate.isMobile, trigger: 'blur' },],
+        neirong: [],
         shijian: [{ required: true, message: '时间不能为空', trigger: 'blur' },],
-        shangpinid: [{ required: true, message: '零食不能为空', trigger: 'blur' }, { validator: this.$validate.isIntNumer, trigger: 'blur' },],
+        beizhu: [{ required: true, message: '备注不能为空', trigger: 'blur' },],
+        shenhe: [{ required: true, message: '是否审核不能为空', trigger: 'blur' },],
         usersid: [{ required: true, message: '用户不能为空', trigger: 'blur' }, { validator: this.$validate.isIntNumer, trigger: 'blur' },],
 
       },
-        shangpinOptions: [],
         usersOptions: [],
 
     };
@@ -95,7 +108,6 @@ export default {
   },
   created() {
     this.init();
-    this.getShangpinList();
     this.getUsersList();
 
   },
@@ -151,7 +163,7 @@ export default {
     onSubmit() {
       this.$refs["ruleForm"].validate(valid => {
         if (valid) {
-          this.$http.post('pingjia/add', this.ruleForm).then(res => {
+          this.$http.post('shenqing/add', this.ruleForm).then(res => {
             if (res.data.code == 0) {
               this.$message({
                 message: '操作成功',
@@ -181,14 +193,6 @@ export default {
       this.$router.go(-1);
     },
 
-    //获取所有零食
-    getShangpinList() {
-      this.$http.get('shangpin/all',).then(res => {
-        if (res && res.data.code == 0) {
-          this.shangpinOptions = res.data.data;
-        }
-      });
-    },
     //获取所有用户
     getUsersList() {
       this.$http.get('users/all',).then(res => {

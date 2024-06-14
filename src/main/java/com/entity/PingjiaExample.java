@@ -603,7 +603,6 @@ public class PingjiaExample {
             this.typeHandler = typeHandler;
             this.betweenValue = true;
         }
-
         protected Criterion(String condition, Object value, Object secondValue) {
             this(condition, value, secondValue, null);
         }

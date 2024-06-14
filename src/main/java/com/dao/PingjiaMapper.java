@@ -5,7 +5,6 @@ import com.entity.PingjiaExample;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
-
 /**
  * @ClassName PingjiaMapper
  * @Description 评论模块数据持久层

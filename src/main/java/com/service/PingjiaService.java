@@ -32,7 +32,6 @@ public interface PingjiaService {
 
     //根据id列查询评论表数据
     Pingjia findById(Integer id);
-
     //根据id列删除评论表数据
     int deleteById(Integer id);
 

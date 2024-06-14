@@ -1,6 +1,5 @@
 package com.entity;
 
-
 /**
  * @ClassName Pingjia
  * @Description 评论模块实体层

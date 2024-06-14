@@ -4,27 +4,31 @@
 			<el-breadcrumb :separator="'Ξ'"
 				:style='{ "width": "1200px", "margin": "0 auto", "fontSize": "14px", "lineHeight": "1" }'>
 				<el-breadcrumb-item>首页</el-breadcrumb-item>
-				<el-breadcrumb-item>评论列表</el-breadcrumb-item>
+				<el-breadcrumb-item>售后申请列表</el-breadcrumb-item>
 			</el-breadcrumb>
 		</div>
+
 		<div class="list-preview"
 			:style='{ "margin": "0px auto", "flexWrap": "wrap", "background": "none", "display": "flex", "width": "1200px", "position": "relative", "justifyContent": "space-between" }'>
 			<!-- 搜索区域 -->
 			<el-form :inline="true" :model="formSearch" class="list-form-pv dy-list-form">
-				<el-form-item v-if="!isQuery.biaoti" :style='{ "margin": "0 10px" }'>
-					<div v-if="true" class="lable" :style='{ "width": "auto", "padding": "0 10px", "lineHeight": "42px", "display": "inline-block" }'>评语</div>
-					<el-input suffix-icon="el-icon-search" v-model="formSearch.biaoti" placeholder="评语" clearable></el-input>
+				<el-form-item v-if="!isQuery.xingming" :style='{ "margin": "0 10px" }'>
+					<div v-if="true" class="lable" :style='{ "width": "auto", "padding": "0 10px", "lineHeight": "42px", "display": "inline-block" }'>姓名</div>
+					<el-input suffix-icon="el-icon-search" v-model="formSearch.xingming" placeholder="姓名" clearable></el-input>
 				</el-form-item>
-				<el-form-item v-if="!isQuery.fenshu" :style='{ "margin": "0 10px" }'>
-					<div v-if="true" class="lable" :style='{ "width": "auto", "padding": "0 10px", "lineHeight": "42px", "display": "inline-block" }'>分数（范围1-5）</div>
-					<el-input suffix-icon="el-icon-search" v-model="formSearch.fenshu" placeholder="分数（范围1-5）" clearable></el-input>
+				<el-form-item v-if="!isQuery.dianhua" :style='{ "margin": "0 10px" }'>
+					<div v-if="true" class="lable" :style='{ "width": "auto", "padding": "0 10px", "lineHeight": "42px", "display": "inline-block" }'>电话</div>
+					<el-input suffix-icon="el-icon-search" v-model="formSearch.dianhua" placeholder="电话" clearable></el-input>
 				</el-form-item>
-				<el-form-item v-if="!isQuery.shangpinid" :style='{ "margin": "0 10px" }'>
-					<div v-if="true" class="lable" :style='{ "width": "auto", "padding": "0 10px", "lineHeight": "42px", "display": "inline-block" }'>零食</div>
-					<el-select v-model="formSearch.shangpinid" placeholder="请选择零食" :clearable="true">
+				<el-form-item v-if="!isQuery.beizhu" :style='{ "margin": "0 10px" }'>
+					<div v-if="true" class="lable" :style='{ "width": "auto", "padding": "0 10px", "lineHeight": "42px", "display": "inline-block" }'>备注</div>
+					<el-input suffix-icon="el-icon-search" v-model="formSearch.beizhu" placeholder="备注" clearable></el-input>
+				</el-form-item>
+				<el-form-item v-if="!isQuery.shenhe" :style='{ "margin": "0 10px" }'>
+					<div v-if="true" class="lable" :style='{ "width": "auto", "padding": "0 10px", "lineHeight": "42px", "display": "inline-block" }'>是否审核</div>
+					<el-select v-model="formSearch.shenhe" placeholder="请选择是否审核" :clearable="true">
 						<el-option label="全部" value=""></el-option>
-						<el-option v-for="(item, index) in shangpinOptions" v-bind:key="item.id" :label="item.mingcheng" :value="item.id">
-						</el-option>
+						<el-option v-for="(item, index) in shenheOptions" v-bind:key="item" :label="item" :value="item"></el-option>
 					</el-select>
 				</el-form-item>
 				<el-form-item v-if="false" :style='{ "margin": "0 10px" }'>
@@ -44,15 +48,14 @@
 				<div class="table-content dy-list-div">
 					<el-table class="tables" size="medium" :show-header="true" header-row-class-name="dy-list-el-table-header-row" header-cell-class-name="dy-list-el-table-header-cell" :style="{ width: '100%', fontSize: '14px', color: 'rgba(72, 72, 72, 1)' }" :data="dataList" :stripe="true" :highlight-current-row="true" tooltip-effect="dark">
 						<el-table-column label="序号" v-if="false" type="index" width="50" />
-						<el-table-column align="center" header-align="center" label="评语" :show-overflow-tooltip="true">
+						<el-table-column align="center" header-align="center" label="姓名" :show-overflow-tooltip="true">
 							<template slot-scope="scope">
-								{{ scope.row.biaoti }}
+								{{ scope.row.xingming }}
 							</template>
 						</el-table-column>
-						<el-table-column align="center" header-align="center" label="分数（范围1-5）" :show-overflow-tooltip="true">
+						<el-table-column align="center" header-align="center" label="电话" :show-overflow-tooltip="true">
 							<template slot-scope="scope">
-								<!-- {{ scope.row.fenshu }} -->
-								<el-rate disabled :value="Number(scope.row.fenshu)" :colors="['#99A9BF', '#F7BA2A', '#FF9900']" text-color="#000000" show-text :texts="['极差', '失望', '一般', '满意', '惊喜']"></el-rate>
+								{{ scope.row.dianhua }}
 							</template>
 						</el-table-column>
 						<el-table-column align="center" header-align="center" label="时间" :show-overflow-tooltip="true">
@@ -60,9 +63,14 @@
 								{{ scope.row.shijian }}
 							</template>
 						</el-table-column>
-						<el-table-column align="center" header-align="center" label="零食" :show-overflow-tooltip="true">
-							<template slot-scope="scope" v-if="scope.row.shangpin && scope.row.shangpin.mingcheng">
-								{{ scope.row.shangpin.mingcheng }}
+						<el-table-column align="center" header-align="center" label="备注" :show-overflow-tooltip="true">
+							<template slot-scope="scope">
+								{{ scope.row.beizhu }}
+							</template>
+						</el-table-column>
+						<el-table-column align="center" header-align="center" label="是否审核" :show-overflow-tooltip="true">
+							<template slot-scope="scope">
+								{{ scope.row.shenhe }}
 							</template>
 						</el-table-column>
 						<el-table-column align="center" header-align="center" label="用户" :show-overflow-tooltip="true">
@@ -120,7 +128,6 @@ export default {
 			xingbieOptions: [],
 			typeOptions: [],
 			shenheOptions: [],
-			shangpinOptions: [],
 			usersOptions: [],
 
 		}
@@ -178,7 +185,6 @@ export default {
 			if (this.$route.query.sortProperty) {
 				this.sortProperty = this.$route.query.sortProperty;
 			}
-			this.getShangpinList();
 			this.getUsersList();
 
 		},
@@ -189,41 +195,52 @@ export default {
 				sortProperty: this.sortProperty, //排序列
 			}
 			let searchWhere = {};
-			if (this.formSearch.biaoti != '' && this.formSearch.biaoti != undefined) {
-				searchWhere.biaoti = this.formSearch.biaoti;
+			if (this.formSearch.xingming != '' && this.formSearch.xingming != undefined) {
+				searchWhere.xingming = this.formSearch.xingming;
 			}
-			if (this.formSearch.fenshu != '' && this.formSearch.fenshu != undefined) {
-				searchWhere.fenshu = this.formSearch.fenshu;
+			if (this.formSearch.dianhua != '' && this.formSearch.dianhua != undefined) {
+				searchWhere.dianhua = this.formSearch.dianhua;
 			}
-			if (this.formSearch.shangpinid != '' && this.formSearch.shangpinid != undefined) {
-				searchWhere.shangpinid = this.formSearch.shangpinid;
+			if (this.formSearch.beizhu != '' && this.formSearch.beizhu != undefined) {
+				searchWhere.beizhu = this.formSearch.beizhu;
+			}
+			if (this.formSearch.shenhe != '' && this.formSearch.shenhe != undefined) {
+				searchWhere.shenhe = this.formSearch.shenhe;
 			}
 			if (this.formSearch.usersid != '' && this.formSearch.usersid != undefined) {
 				searchWhere.usersid = this.formSearch.usersid;
 			}
 
-			if (this.$route.query.biaoti) {
-				searchWhere.biaoti = this.$route.query.biaoti;
-				this.formSearch.biaoti = this.$route.query.biaoti;
-				this.isQuery.biaoti = true;
+			if (this.$route.query.xingming) {
+				searchWhere.xingming = this.$route.query.xingming;
+				this.formSearch.xingming = this.$route.query.xingming;
+				this.isQuery.xingming = true;
 			} else {
-				this.isQuery.biaoti = false;
+				this.isQuery.xingming = false;
 			}
 
-			if (this.$route.query.fenshu) {
-				searchWhere.fenshu = this.$route.query.fenshu;
-				this.formSearch.fenshu = this.$route.query.fenshu;
-				this.isQuery.fenshu = true;
+			if (this.$route.query.dianhua) {
+				searchWhere.dianhua = this.$route.query.dianhua;
+				this.formSearch.dianhua = this.$route.query.dianhua;
+				this.isQuery.dianhua = true;
 			} else {
-				this.isQuery.fenshu = false;
+				this.isQuery.dianhua = false;
 			}
 
-			if (this.$route.query.shangpinid) {
-				searchWhere.shangpinid = this.$route.query.shangpinid;
-				this.formSearch.shangpinid = this.$route.query.shangpinid;
-				this.isQuery.shangpinid = true;
+			if (this.$route.query.beizhu) {
+				searchWhere.beizhu = this.$route.query.beizhu;
+				this.formSearch.beizhu = this.$route.query.beizhu;
+				this.isQuery.beizhu = true;
 			} else {
-				this.isQuery.shangpinid = false;
+				this.isQuery.beizhu = false;
+			}
+
+			if (this.$route.query.shenhe) {
+				searchWhere.shenhe = this.$route.query.shenhe;
+				this.formSearch.shenhe = this.$route.query.shenhe;
+				this.isQuery.shenhe = true;
+			} else {
+				this.isQuery.shenhe = false;
 			}
 
 			if (this.$route.query.usersid) {
@@ -235,7 +252,7 @@ export default {
 			}
 
 
-			this.$http.get('pingjia/manaqian', { params: Object.assign(params, searchWhere) }).then(res => {
+			this.$http.get('shenqing/manaqian', { params: Object.assign(params, searchWhere) }).then(res => {
 				if (res.data.code == 0) {
 					this.dataList = res.data.data.records;
 					this.totalPage = res.data.data.pageCount;
@@ -244,15 +261,7 @@ export default {
 			});
 		},
 		toDetail(id) {
-			this.$router.push({ path: '/index/pingjiaDetail', query: { id: id } });
-		},
-		//获取所有零食
-		getShangpinList() {
-			this.$http.get('shangpin/all',).then(res => {
-				if (res && res.data.code == 0) {
-					this.shangpinOptions = res.data.data;
-				}
-			});
+			this.$router.push({ path: '/index/shenqingDetail', query: { id: id } });
 		},
 		//获取所有用户
 		getUsersList() {

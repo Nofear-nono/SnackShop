@@ -4,9 +4,10 @@
 			<el-breadcrumb :separator="'Ξ'"
 				:style='{ "width": "1200px", "margin": "0 auto", "fontSize": "14px", "lineHeight": "1" }'>
 				<el-breadcrumb-item>首页</el-breadcrumb-item>
-				<el-breadcrumb-item>评论信息</el-breadcrumb-item>
+				<el-breadcrumb-item>售后申请信息</el-breadcrumb-item>
 			</el-breadcrumb>
 		</div>
+
 		<div class="detail-preview"
 			:style='{ "width": "1200px", "padding": "0 0 24px", "margin": "0px auto", "position": "relative" }'>
 			<div class="dy-add-detail-attr-div">
@@ -14,23 +15,28 @@
 				<div class="info"
 					:style='{ "width": "98%", "padding": "0px 0 20px", "margin": "40px auto 0 auto", "background": "none", "height": "auto" }'>
 					<div class="item" :style='{ "border": "0px solid #dfdfdf", "padding": "0px 10px", "boxShadow": "0px 2px 0px #eee", "margin": "0 0 8px 0", "borderRadius": "0px", "background": "none", "display": "flex", "justifyContent": "spaceBetween" }'>
-						<div class="lable" :style='{ "width": "120px", "padding": "0 10px", "fontSize": "14px", "lineHeight": "40px", "color": "#333", "textAlign": "right" }'>评语</div>
-						<div :style='{ "width": "498px", "padding": "8px 10px 0", "fontSize": "14px", "lineHeight": "24px", "color": "#666", "height": "auto" }'>{{ detail.biaoti }}</div>
+						<div class="lable" :style='{ "width": "120px", "padding": "0 10px", "fontSize": "14px", "lineHeight": "40px", "color": "#333", "textAlign": "right" }'>姓名</div>
+						<div :style='{ "width": "498px", "padding": "8px 10px 0", "fontSize": "14px", "lineHeight": "24px", "color": "#666", "height": "auto" }'>{{ detail.xingming }}</div>
 					</div>
 					<div class="item" :style='{ "border": "0px solid #dfdfdf", "padding": "0px 10px", "boxShadow": "0px 2px 0px #eee", "margin": "0 0 8px 0", "borderRadius": "0px", "background": "none", "display": "flex", "justifyContent": "spaceBetween" }'>
-						<div class="lable" :style='{ "width": "120px", "padding": "0 10px", "fontSize": "14px", "lineHeight": "40px", "color": "#333", "textAlign": "right" }'>分数（范围1-5）</div>
-						<div :style='{ "width": "498px", "padding": "8px 10px 0", "fontSize": "14px", "lineHeight": "24px", "color": "#666", "height": "auto" }'>
-						    <!-- {{ detail.fenshu }} -->
-							<el-rate :value="Number(detail.fenshu)" disabled text-color="#000000" :colors="['#99A9BF', '#F7BA2A', '#FF9900']" show-text :texts="['极差', '失望', '一般', '满意', '惊喜']"></el-rate>
-						</div>
+						<div class="lable" :style='{ "width": "120px", "padding": "0 10px", "fontSize": "14px", "lineHeight": "40px", "color": "#333", "textAlign": "right" }'>电话</div>
+						<div :style='{ "width": "498px", "padding": "8px 10px 0", "fontSize": "14px", "lineHeight": "24px", "color": "#666", "height": "auto" }'>{{ detail.dianhua }}</div>
+					</div>
+					<div class="item" :style='{ "border": "0px solid #dfdfdf", "padding": "0px 10px", "boxShadow": "0px 2px 0px #eee", "margin": "0 0 8px 0", "borderRadius": "0px", "background": "none", "display": "flex", "justifyContent": "spaceBetween" }'>
+						<div class="lable" :style='{ "width": "120px", "padding": "0 10px", "fontSize": "14px", "lineHeight": "40px", "color": "#333", "textAlign": "right" }'>说明</div>
+						<div :style='{ "width": "498px", "padding": "8px 10px 0", "fontSize": "14px", "lineHeight": "24px", "color": "#666", "height": "auto" }'>{{ detail.neirong }}</div>
 					</div>
 					<div class="item" :style='{ "border": "0px solid #dfdfdf", "padding": "0px 10px", "boxShadow": "0px 2px 0px #eee", "margin": "0 0 8px 0", "borderRadius": "0px", "background": "none", "display": "flex", "justifyContent": "spaceBetween" }'>
 						<div class="lable" :style='{ "width": "120px", "padding": "0 10px", "fontSize": "14px", "lineHeight": "40px", "color": "#333", "textAlign": "right" }'>时间</div>
 						<div :style='{ "width": "498px", "padding": "8px 10px 0", "fontSize": "14px", "lineHeight": "24px", "color": "#666", "height": "auto" }'>{{ detail.shijian }}</div>
 					</div>
 					<div class="item" :style='{ "border": "0px solid #dfdfdf", "padding": "0px 10px", "boxShadow": "0px 2px 0px #eee", "margin": "0 0 8px 0", "borderRadius": "0px", "background": "none", "display": "flex", "justifyContent": "spaceBetween" }'>
-						<div class="lable" :style='{ "width": "120px", "padding": "0 10px", "fontSize": "14px", "lineHeight": "40px", "color": "#333", "textAlign": "right" }'>零食</div>
-						<div v-if="detail.shangpin && detail.shangpin.mingcheng" :style='{ "width": "498px", "padding": "8px 10px 0", "fontSize": "14px", "lineHeight": "24px", "color": "#666", "height": "auto" }'>{{ detail.shangpin.mingcheng }}</div>
+						<div class="lable" :style='{ "width": "120px", "padding": "0 10px", "fontSize": "14px", "lineHeight": "40px", "color": "#333", "textAlign": "right" }'>备注</div>
+						<div :style='{ "width": "498px", "padding": "8px 10px 0", "fontSize": "14px", "lineHeight": "24px", "color": "#666", "height": "auto" }'>{{ detail.beizhu }}</div>
+					</div>
+					<div class="item" :style='{ "border": "0px solid #dfdfdf", "padding": "0px 10px", "boxShadow": "0px 2px 0px #eee", "margin": "0 0 8px 0", "borderRadius": "0px", "background": "none", "display": "flex", "justifyContent": "spaceBetween" }'>
+						<div class="lable" :style='{ "width": "120px", "padding": "0 10px", "fontSize": "14px", "lineHeight": "40px", "color": "#333", "textAlign": "right" }'>是否审核</div>
+						<div :style='{ "width": "498px", "padding": "8px 10px 0", "fontSize": "14px", "lineHeight": "24px", "color": "#666", "height": "auto" }'>{{ detail.shenhe }}</div>
 					</div>
 					<div class="item" :style='{ "border": "0px solid #dfdfdf", "padding": "0px 10px", "boxShadow": "0px 2px 0px #eee", "margin": "0 0 8px 0", "borderRadius": "0px", "background": "none", "display": "flex", "justifyContent": "spaceBetween" }'>
 						<div class="lable" :style='{ "width": "120px", "padding": "0 10px", "fontSize": "14px", "lineHeight": "40px", "color": "#333", "textAlign": "right" }'>用户</div>
@@ -57,10 +63,12 @@ export default {
 			baseUrl: this.$config.baseUrl,
 			id: 0,
 			detail: {
-				biaoti: '',
-				fenshu: '',
+				xingming: '',
+				dianhua: '',
+				neirong: '',
 				shijian: '',
-				shangpin: { mingcheng: '' },
+				beizhu: '',
+				shenhe: '',
 				users: { loginname: '' },
 
 			},
@@ -86,7 +94,7 @@ export default {
 			if (this.$route.query.id) {
 				this.id = this.$route.query.id;
 			}
-			this.$http.get('pingjia/detail/' + this.id, {}).then(res => {
+			this.$http.get('shenqing/detail/' + this.id, {}).then(res => {
 				if (res.data.code == 0) {
 					this.detail = res.data.data;
 					// this.$forceUpdate();

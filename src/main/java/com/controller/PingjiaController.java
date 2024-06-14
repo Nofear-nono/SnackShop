@@ -174,5 +174,4 @@ public class PingjiaController {
         pageWrap.setSorts(sorts);
         return pageWrap;
     }
-
 }

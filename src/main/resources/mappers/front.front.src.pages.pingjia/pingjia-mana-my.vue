@@ -7,7 +7,6 @@
 				<el-breadcrumb-item>我的评论列表</el-breadcrumb-item>
 			</el-breadcrumb>
 		</div>
-
 		<div class="list-preview"
 			:style='{ "margin": "0px auto", "flexWrap": "wrap", "background": "none", "display": "flex", "width": "1200px", "position": "relative", "justifyContent": "space-between" }'>
 			<!-- 搜索区域 -->
