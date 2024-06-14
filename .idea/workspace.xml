@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0d52ce9-a685-40d1-963b-387a87f379d8" name="Changes" comment="lzq第二次提交：售后管理、系统管理">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/service.impl/LiuyanServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/service.impl/PingjiaServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/service.impl/ShenqingServiceImpl.java" afterDir="false" />
+    <list default="true" id="a0d52ce9-a685-40d1-963b-387a87f379d8" name="Changes" comment="lzq第一次提交：评价&#10;   第二次提交：留言、申请">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/ShenqingController" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/ShenqingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dao/LiuyanMapper" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dao/LiuyanMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dao/ShenqingMapper" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dao/ShenqingMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/entity/Shenqing" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/entity/Shenqing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/entity/ShenqingExample" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/entity/ShenqingExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/service.impl/ShenqingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/service.impl/ShenqingServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/service/ShenqingService" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/service/ShenqingService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,18 +51,23 @@
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "项目",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "web.server"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\JavaEE\SpringBoot\snackshop\src\main\java\com\entity" />
@@ -94,7 +103,7 @@
       <workItem from="1718075877949" duration="2005000" />
       <workItem from="1718086058929" duration="215000" />
       <workItem from="1718086322495" duration="4000000" />
-      <workItem from="1718323413855" duration="3640000" />
+      <workItem from="1718323413855" duration="4453000" />
     </task>
     <task id="LOCAL-00001" summary="first test">
       <created>1717684218042</created>
@@ -152,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1718326050498</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="lzq第一次提交：评价&#10;   第二次提交：留言、申请">
+      <created>1718327169197</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1718327169197</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,6 +218,7 @@
     <MESSAGE value="ideal test" />
     <MESSAGE value="lzq第一次提交：售后管理、系统管理" />
     <MESSAGE value="lzq第二次提交：售后管理、系统管理" />
-    <option name="LAST_COMMIT_MESSAGE" value="lzq第二次提交：售后管理、系统管理" />
+    <MESSAGE value="lzq第一次提交：评价&#10;   第二次提交：留言、申请" />
+    <option name="LAST_COMMIT_MESSAGE" value="lzq第一次提交：评价&#10;   第二次提交：留言、申请" />
   </component>
 </project>
