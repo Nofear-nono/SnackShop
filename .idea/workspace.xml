@@ -6,13 +6,27 @@
   <component name="ChangeListManager">
     <list default="true" id="a0d52ce9-a685-40d1-963b-387a87f379d8" name="Changes" comment="lzq第一次提交：评价&#10;   第二次提交：留言、申请">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/ShenqingController" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/ShenqingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dao/LiuyanMapper" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dao/LiuyanMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dao/ShenqingMapper" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dao/ShenqingMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/entity/Shenqing" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/entity/Shenqing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/entity/ShenqingExample" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/entity/ShenqingExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/service.impl/ShenqingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/service.impl/ShenqingServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/service/ShenqingService" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/service/ShenqingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/SpringbootApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SpringbootApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/LiuyanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/LiuyanController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/PingjiaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/PingjiaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/ShenqingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ShenqingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dao/LiuyanMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/LiuyanMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dao/PaymentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/PaymentMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dao/PingjiaMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/PingjiaMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dao/ShenqingMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/ShenqingMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/entity/Dx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Dx.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/entity/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Payment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/entity/Pingjia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Pingjia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/entity/PingjiaExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/PingjiaExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/entity/Shenqing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Shenqing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/entity/ShenqingExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/ShenqingExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/entity/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/service.impl/LiuyanServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service.impl/LiuyanServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/service.impl/PingjiaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service.impl/PingjiaServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/service.impl/ShenqingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service.impl/ShenqingServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/service/PaymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/PaymentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/service/PingjiaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/PingjiaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/service/ShenqingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/ShenqingService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +87,7 @@
       <recent name="D:\JavaEE\SpringBoot\snackshop\src\main\java\com\entity" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Lenovo\Desktop\snackshop\src\main\java" />
       <recent name="C:\Users\Lenovo\Desktop\snackshop\src\main\resources" />
     </key>
   </component>
@@ -103,7 +118,7 @@
       <workItem from="1718075877949" duration="2005000" />
       <workItem from="1718086058929" duration="215000" />
       <workItem from="1718086322495" duration="4000000" />
-      <workItem from="1718323413855" duration="4453000" />
+      <workItem from="1718323413855" duration="4780000" />
     </task>
     <task id="LOCAL-00001" summary="first test">
       <created>1717684218042</created>
@@ -168,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1718327169197</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="lzq第一次提交：评价&#10;   第二次提交：留言、申请">
+      <created>1718327956531</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1718327956531</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
