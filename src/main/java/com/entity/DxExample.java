@@ -1,6 +1,5 @@
 package com.entity;
 
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -256,7 +255,6 @@ public class DxExample {
             addCriterion("content <>", value, "content");
             return (com.entity.DxExample.Criteria) this;
         }
-
         public com.entity.DxExample.Criteria andContentGreaterThan(String value) {
             addCriterion("content >", value, "content");
             return (com.entity.DxExample.Criteria) this;
