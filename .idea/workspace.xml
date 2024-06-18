@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0d52ce9-a685-40d1-963b-387a87f379d8" name="Changes" comment="ideal test">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/entity/Shangpin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -99,6 +100,7 @@
       <workItem from="1718325713750" duration="874000" />
       <workItem from="1718327931978" duration="955000" />
       <workItem from="1718690849918" duration="989000" />
+      <workItem from="1718691847616" duration="964000" />
     </task>
     <task id="LOCAL-00001" summary="first test">
       <created>1717684218042</created>
@@ -163,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1718325935830</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="ideal test">
+      <created>1718691926478</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1718691926478</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
