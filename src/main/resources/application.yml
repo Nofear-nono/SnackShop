@@ -7,7 +7,7 @@ project:
 # WEB服务器配置
 server:
   #端口
-  port: 8090
+  port: 8080
   servlet:
     #上下文路径
     context-path: /snackshop
