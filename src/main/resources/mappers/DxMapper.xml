@@ -121,7 +121,6 @@
             <if test="addtime != null" >
                 addtime,
             </if>
-
         </trim>
         <trim prefix="values (" suffix=")" suffixOverrides="," >
             <if test="leibie != null" >
@@ -157,7 +156,6 @@
             <if test="record.addtime != null" >
                 addtime = #{record.addtime,jdbcType=VARCHAR},
             </if>
-
         </set>
         <if test="_parameter != null" >
             <include refid="Update_By_Example_Where_Clause" />
@@ -183,7 +181,6 @@
             <if test="addtime != null" >
                 addtime = #{addtime,jdbcType=VARCHAR},
             </if>
-
         </set>
         where id = #{id,jdbcType=INTEGER}
     </update>
