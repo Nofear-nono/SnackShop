@@ -24,10 +24,8 @@ import java.util.List;
 public class ShangpinServiceImpl implements ShangpinService {
     @Autowired
     private ShangpinMapper shangpinMapper;
-
     @Autowired
     private PinleiMapper pinleiMapper;
-
 
     //保存或更新零食表
     @Override
