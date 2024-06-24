@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dao.PaymentMapper">
+    <resultMap id="BaseResultMap" type="com.entity.Payment" >
+        <id column="id" property="id" jdbcType="INTEGER" />
+        <result column="mingcheng" property="mingcheng" jdbcType="VARCHAR" />
+    </resultMap>
+
+    <sql id="Base_Column_List" >
+        id,  mingcheng
+    </sql>
+
+    <insert id="insert" parameterType="com.entity.Payment" >
+        /**
+        获取最后插入的行的自增ID
+        */
+        <selectKey resultType="java.lang.Integer" keyProperty="id" order="AFTER" >
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+        insert into zhifufangshi (mingcheng) values (#{mingcheng,jdbcType=VARCHAR})
+    </insert>
+
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+        delete from zhifufangshi where id = #{id,jdbcType=INTEGER}
+    </delete>
+
+    <update id="updateByPrimaryKey" parameterType="com.entity.Payment" >
+        update zhifufangshi set mingcheng = #{mingcheng,jdbcType=VARCHAR} where id = #{id,jdbcType=INTEGER}
+    </update>
+
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+        select <include refid="Base_Column_List" /> from zhifufangshi where id = #{id,jdbcType=INTEGER}
+    </select>
+</mapper>   
