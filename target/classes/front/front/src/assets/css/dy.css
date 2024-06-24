@@ -1,0 +1,576 @@
+/* 登陆页 */
+.dy-login-div {
+    min-height: 100vh;
+    align-items: center;
+    background: url(~@/assets/img/login-bg.jpg) no-repeat;
+    display: flex;
+    width: 100%;
+    background-size: cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+    justify-content: center;
+}
+
+/* 登陆页 表单 */
+.dy-login-el-form {
+    padding: 40px 40px 40px 40px;
+    box-shadow: 0px 0px 0px #ccc,inset 0px 0px 0px 0px #e0f8e8;
+    margin: 20px 0 0 40%;
+    border-color: #1170d2 #08b344 #08b344 #1170d2;
+    border-radius: 10% 10%;
+    background: rgba(255,255,255,.8);
+    border-width:4px;
+    width:30%;
+    border-style: solid double solid double;
+    height:auto;
+}
+
+/* 登陆页 表单文字说明 */
+.dy-login-el-form-div {
+    width: 100%;
+    margin: 0 0 10px 0;
+    font-size: 24px;
+    color: #08b344 ;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* 登陆页 表单项 */
+.dy-login-el-form-item {
+    margin: 0 auto 25px;
+    width:80%;
+    text-align: center;
+}
+
+/* 登陆页 表单校验错误提示*/
+.dy-login-el-form .el-form-item__error{
+    margin: 5px 160px;
+}
+
+/* 登陆页 用户名及密码输入框*/
+.dy-login-el-form-item-input {
+    border: 0px solid #eacb96;
+    padding:0 10px;
+    box-shadow: 0px 2px 0px #08b344;
+    color:#999;
+    border-radius:0%;
+    background: #fff;
+    width: 50%;
+    font-size: 14px;
+    height: 44px;
+}
+
+/*登陆页 角色radio*/
+.dy-login-el-form .el-radio__input .el-radio__inner{
+    background: rgba(53, 53, 53, 0);
+	border-color: #666666;
+}
+
+/*登陆页 角色radio 被选中*/
+.dy-login-el-form .el-radio__input.is-checked .el-radio__inner{
+    background: #08b344;
+	border-color: #0ca140
+}
+
+/*登陆页 角色radio label*/
+.dy-login-el-form .el-radio__label{
+    color: #666666;
+	font-size: 14px;
+}
+
+/*登陆页 角色radio label 被选中 */
+.dy-login-el-form .el-radio__input.is-checked+.el-radio__label{
+    color: #ffa100;
+	font-size: 14px;
+}
+
+/* 登陆页 登陆按钮 */
+.dy-login-button,
+.dy-login-button:hover {
+    border: 0;
+    cursor: pointer;
+    padding: 0px;
+    box-shadow: 1px 2px 3px #aaa;
+    margin: 0 5px;
+    color: #fff!important;
+    outline: none;
+    border-radius: 4px;
+    background: linear-gradient(180deg, rgba(17,112,210,1) 0%, rgba(8,179,68,1) 100%)!important;
+    width: 128px;
+    font-size: 14px;
+    height: 40px;
+}
+
+/* 登陆页 重置按钮 */
+.dy-reset-button,
+.dy-reset-button:hover {
+    border: 1px solid #bbb!important;
+    cursor: pointer;
+    padding: 0px;
+    box-shadow: 1px 2px 3px #ccc;
+    margin: 0 5px !important;
+    color: #999 !important;
+    outline: none;
+    border-radius: 4px;
+    background: #fff!important;
+    width: 128px;
+    font-size: 14px;
+    height: 40px;
+}
+
+/* 登陆页 用户注册按钮 */
+.dy-register-link {
+    cursor: pointer;
+    margin: 0 5px;
+    color: #08b344;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+
+/* 顶部区域 */
+.dy-top-container-div {
+    box-shadow: 0 0px 0px rgba(64, 158, 255, .3);
+    padding: 0px;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    background: url(~@/assets/img/top-bg.jpg);
+    width: 100%;
+    position: relative;
+    justify-content:space-around;
+    height: 75px;
+    z-index: 1002;
+}
+
+/* 顶部区域 项目名称 */
+.dy-top-project-div {
+    margin: 0 0 12px;
+    display: inline-block;
+    margin: 0 0 0 210px;
+    font-size: 24px;
+    color: #0660ac;
+    text-align: center;
+    font-weight:bold;
+    background: none;
+}
+
+/* 顶部区域 登陆用户信息 */
+.dy-top-usersinfo-div {
+    color:red;
+    background-color: none;
+    font-size: 16px;
+    display: inline-block;
+}
+
+/* 顶部区域 退出登陆按钮 */
+.dy-top-logout-button,
+.dy-top-logout-button:hover {
+    border: 1px solid #1170d2;
+    padding: 0 30px;
+    box-shadow: 1px 2px 4px #bbb;
+    margin: 10px 0 0 20px;
+    color: #1170d2;
+    border-radius: 2px;
+    background: #fff;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 36px;
+    height: 36px;
+}
+
+/* 顶部区域 登陆按钮 */
+.dy-top-login-button,
+.dy-top-login-button:hover {
+    border: 1px solid #1170d2 !important;
+    padding: 0 30px !important;
+    box-shadow: 1px 2px 4px #bbb !important;
+    margin: 10px 0 12px !important;
+    color: #fff !important;
+    border-radius: 2px;
+    background: radial-gradient(circle, rgba(17,112,210,1) 0%, rgba(8,179,68,1) 100%) !important;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 36px;
+    height: 36px;
+}
+
+/* 主体区域 */
+.dy-body-container-div {
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    background:none;
+}
+
+/* 顶部导航区域 */
+.dy-top-menu-div {
+    border-color: #efefef;
+    border-style: solid;
+    background: linear-gradient(to right,#1170d2, #08b344),#1170d2;
+    width: 100%;
+    border-width: 0;
+    height: auto;
+}
+
+/* 顶部水平导航*/
+.dy-top-horizonta-menu {
+    border-color: #ffa100;
+    margin: 0 auto;
+    list-style: none;
+    border-style: solid;
+    background: none;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+    border-width: 0;
+    position:relative;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* 顶部导航图标*/
+.dy-top-menu-item-i {
+    padding: 0 10px;
+    margin: 0;
+    color: #fff !important;
+    font-size: 14px;
+    width: 14px;
+    line-height: 56px;
+}
+
+/* 顶部导航标题*/
+.dy-top-menu-item-span {
+    padding: 0 10px;
+    color: inherit;
+    font-size: 14px;
+    line-height: 56px;
+    height: 56px;
+}
+
+/* 顶部二级导航图标*/
+.dy-top-menu-item-i-2 {
+    padding: 0 15px 0 5px;
+    margin: 0;
+    color: #fff !important;
+    font-size: 14px;
+}
+
+/* 顶部二级导航标题*/
+.dy-top-menu-item-span-2 {
+    padding: 0 ;
+    margin: 0;
+    color:  #fff ;
+    font-size: 14px;
+}
+
+
+/* 顶部导航项 */
+.menu-preview .el-menu-horizontal-demo .el-menu-item {
+    cursor: pointer;
+	padding: 0;
+	margin: 0;
+	color: #fff;
+	white-space: nowrap;
+	display: flex;
+	font-size: 16px;
+	border-color: #ffc800 #ffc800 #ffc800 #ffc800;
+	line-height: 56px;
+	border-radius: 0;
+	background: none;
+	width: 120px;
+	justify-content: center;
+	border-width: 0px;
+	position: relative;
+	border-style: solid;
+	list-style: none;
+	text-align: center;
+	height: 56px;
+}
+
+/* 顶部导航项 被激活*/
+.menu-preview .el-menu-horizontal-demo .el-menu-item.is-active {
+    cursor: pointer;
+	padding: 0;
+	margin: 0;
+	color: #fff;
+	white-space: nowrap;
+	font-size: 14px;
+	border-color: #ffa100 #ffa100 #ffa100 #ffa100;
+	line-height: 56px;
+	border-radius: 0;
+	background: #0b4887 !important;
+	width: 120px;
+	border-width: 0px;
+	position: relative;
+	border-style: solid;
+	list-style: none;
+	height: 56px;
+}
+
+/* 顶部导航项 鼠标悬浮 */
+.menu-preview .el-menu-horizontal-demo .el-menu-item:hover {
+    cursor: pointer;
+	padding: 0;
+	margin: 0;
+	color: #fff;
+	white-space: nowrap;
+	font-size: 14px;
+	border-color: #ffa100 #ffa100 #ffa100 #ffa100;
+	line-height: 56px;
+	border-radius: 0;
+	background: #0b4887;
+	width: 120px;
+	border-width: 0px;
+	position: relative;
+	border-style: solid;
+	list-style: none;
+	height: 56px;
+}
+
+/* 顶部下拉导航项 */
+.menu-preview .el-menu-horizontal-demo .el-submenu .el-submenu__title {
+	cursor: pointer;
+	padding: 0;
+	margin: 0;
+	color: #fff;
+	white-space: nowrap;
+	font-size: 16px;
+	border-color: #ffc800 #ffc800 #ffc800 #ffc800;
+	line-height: 56px;
+	border-radius: 0;
+	background: none;
+	width: 120px;
+	justify-content: center;
+	border-width: 0px;
+	position: relative;
+	border-style: solid;
+	list-style: none;
+	text-align: center;
+	height: 56px;
+}
+
+/* 顶部下拉导航项 鼠标悬浮 */
+.menu-preview .el-menu-horizontal-demo .el-submenu .el-submenu__title:hover {
+	cursor: pointer;
+	padding: 0;
+	margin: 0;
+	color: #fff;
+	white-space: nowrap;
+	font-size: 14px;
+	border-color: #ffa100 #ffa100 #ffa100 #ffa100;
+	line-height: 56px;
+	border-radius: 0;
+	background: #0b4887;
+	width: 120px;
+	border-width: 0px;
+	position: relative;
+	border-style: solid;
+	list-style: none;
+	height: 56px;
+}
+
+/* 顶部下拉导航项 被激活*/
+.menu-preview .el-menu-horizontal-demo .el-submenu.is-active {
+	cursor: pointer;
+	padding: 0;
+	margin: 0;
+	color: #fff;
+	white-space: nowrap;
+	font-size: 14px;
+	border-color: #ffa100 #ffa100 #ffa100 #ffa100;
+	line-height: 56px;
+	border-radius: 0;
+	background: #0b4887;
+	width: 120px;
+	border-width: 0px;
+	position: relative;
+	border-style: solid;
+	list-style: none;
+	height: 56px;
+}
+
+/* 下拉二级导航 */
+.el-menu--collapse .el-menu .el-submenu,
+.el-menu--popup {
+  /*宽度*/
+  min-width: 120px !important;
+}
+
+/* 下拉二级导航 */
+.dy-el-menu-item {
+	background: linear-gradient(to right,#1170d2, #08b344),#1170d2;
+}
+
+/* 下拉二级导航 鼠标悬浮 */
+.dy-el-menu-item:hover {
+	background: #0b4887 !important;
+}
+
+/* 底部 友情链接 */
+.dy-bottom-div {
+    min-height: 150px;
+    padding: 20px 0;
+    margin:20px 0 0;
+    align-items: center;
+    color: #fff;
+    background: #333;
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+/* 提交按钮 */
+.dy-add-button,
+.dy-add-button:hover {
+    border: 0px;
+    cursor: pointer;
+    padding: 0;
+    box-shadow: 1px 2px 3px #aaa;
+    margin: 0 20px 0 0;
+    outline: none;
+    color: #fff !important;
+    border-radius: 4px;
+    background: #1170d2 !important;
+    width: 128px;
+    line-Height: 40px;
+    font-size: 14px;
+    height: 40px;
+}
+
+/* 搜索按钮 */
+
+.dy-search-button,
+.dy-search-button:hover {
+    border: 0px solid #fcbc45;
+    cursor: pointer;
+    padding: 0px 15px;
+    box-shadow: 0px 0px 0px #d2992f;
+    margin: 0 10px 0 0;
+    outline: none;
+    color: #fff !important;
+    outline: none;
+    border-radius: 4px;
+    background: #1170d2 !important;
+    width: auto;
+    line-Height: 40px;
+    font-size: 14px;
+    height: 40px;
+}
+
+/* 返回按钮 */
+.dy-back-button,
+.dy-back-button:hover {
+    border: 1px solid #bbb !important;
+    cursor: pointer;
+    padding: 0;
+    box-shadow: 1px 2px 6px #ccc;
+    margin: 0 !important;
+    outline: none;
+    color: #999;
+    border-radius: 4px;
+    background: #fff !important;
+    width: 128px;
+    line-Height: 40px;
+    font-size: 14px;
+    height: 40px;
+}
+
+/* 查看按钮 */
+.dy-chakan-button,
+.dy-chakan-button:hover {
+    border: 0px solid rgba(64, 158, 255, 1);
+    cursor: pointer;
+    padding: 0;
+    margin: 0 20px 0 0 !important;
+    outline: none;
+    color: #fff;
+    border-radius: 4px;
+    background: #08b344;
+    width: 128px;
+    line-Height: 40px;
+    font-size: 14px;
+    height: 40px;
+}
+
+/* 详情按钮 */
+.dy-detail-button,
+.dy-detail-button:hover {
+    border-radius: 4px;
+}
+
+/* 面包屑 */
+.dy-breadcrumb-div {
+    width: 100%;
+    padding: 12px;
+    box-shadow:0 0px 6px #ccc;
+    margin: 0 auto ;
+    border-radius: 0px;
+    background: linear-gradient(180deg, #eee 0%, #fff 32%, #eee 100%);
+    border-color:#fff;
+    border-style:solid;
+    border-width: 1px 0 1px 0;
+}
+
+/* 列表页 搜索区域 */
+.dy-list-form {
+    padding: 10px;
+    margin: 20px auto 0;
+    border-color: #9cc0e4;
+    align-items: center;
+    display:flex;
+    border-radius:4px;
+    flex-wrap: wrap;
+    background: #e6eff8;
+    border-width: 1px;
+    width: 1200px;
+    border-style: solid;
+    height: auto;
+    order: 2;
+}
+
+/* 列表页 数据列表 */
+.dy-list-div {
+    border: 1px solid #9ce3b5;
+    padding: 20px;
+    box-shadow: 0px 0px 0px #ddd,inset 0px 0px 600px 0px #e0f8e8;
+    margin: 20px 0 0;
+    border-radius:4px;
+    flex-wrap: wrap;
+    background: #fff;
+    width: 100%;
+    justify-content:space-between;
+    height: auto;
+    float: left;
+}
+
+/* 数据表格 表头行*/
+.dy-list-el-table-header-row {
+    color: #333;
+    font-size: 16px;
+    font-weight:600;
+}
+
+/* 数据表格 表头单元格*/
+.dy-list-el-table-header-cell {
+    background: #9cc0e4 !important;
+}
+
+/* 添加和详情页 */
+.dy-add-detail-attr-div {
+    padding:16px 16px 20px 16px;
+    margin:20px 0 20px 0;
+    border:1px solid #9ce3b5;
+    box-shadow:0px 2px 6px #ddd,inset 0px 0px 600px 0px #e0f8e8;
+    overflow:hidden;
+    border-radius:16px;
+    background:#fff;
+    position:relative;
+}
