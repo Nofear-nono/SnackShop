@@ -1,15 +1,16 @@
 package com.service.impl;
 
-import com.dao.*;
-import com.entity.*;
+import com.dao.UsersMapper;
+import com.entity.Users;
+import com.entity.UsersExample;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.service.*;
-import com.util.ExampleBuilder;
+import com.service.UsersService;
 import com.util.PageData;
 import com.util.PageWrap;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 import java.util.List;
 
 /**

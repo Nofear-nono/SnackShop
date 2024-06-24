@@ -16,10 +16,10 @@ import java.util.List;
  * @ClassName ZhifufangshiController
  * @Description 支付方式模块控制层
  */
-
 @RequestMapping("zhifufangshi")
 @RestController
 public class ZhifufangshiController {
+
     @Autowired
     private ZhifufangshiService zhifufangshiService;
 
@@ -175,4 +175,5 @@ public class ZhifufangshiController {
         pageWrap.setSorts(sorts);
         return pageWrap;
     }
+
 }

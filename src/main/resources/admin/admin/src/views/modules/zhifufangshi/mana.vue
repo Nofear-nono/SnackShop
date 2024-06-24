@@ -97,6 +97,7 @@ export default {
       xingbieOptions: [],
       typeOptions: [],
       shenheOptions: [],
+
     };
   },
   created() {
@@ -116,6 +117,7 @@ export default {
     ZhifufangshiDetail,
     ZhifufangshiDingdanChakan,
     ZhifufangshiDingdanAdd,
+
   },
   methods: {
     //页面元素样式加载
@@ -164,6 +166,7 @@ export default {
             el.style.lineHeight = this.contents.inputHeight
           })
         }, 10)
+
       })
     },
     // 搜索按钮样式加载
@@ -291,6 +294,7 @@ export default {
       this.shenheOptions = "yes,no".split(',');
       this.xingbieOptions = "男,女".split(',');
       this.typeOptions = this.$userstypes;
+
     },
 
     //点击搜索按钮方法
@@ -363,7 +367,7 @@ export default {
           this.$message({
             type: 'info',
             message: '已取消'+confirmText
-          });
+          });          
       });
     },
 
@@ -419,9 +423,10 @@ export default {
           this.$message({
             type: 'info',
             message: '已取消'+tname+'操作'
-          });
+          });          
       });
     },
+
 
     //跳转到支付方式订单添加页面
     dingdanAddHandler(id, mingcheng) {
@@ -440,7 +445,11 @@ export default {
         this.$refs.zhifufangshiDingdanChakan.init(id);
       });
     },
+
+
+ 
   }
+
 };
 </script>
 <style lang="scss" scoped>
@@ -462,6 +471,7 @@ export default {
     }
   }
 }
+
 
 .el-button+.el-button {
   margin: 0;

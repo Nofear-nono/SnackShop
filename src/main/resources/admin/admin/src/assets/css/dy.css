@@ -1,0 +1,101 @@
+/* 登陆页 */
+.dy-login-container-div {
+    background: url(~@/assets/img/login-bg.jpg);
+    min-height: 100vh;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+/* 登陆页 登陆框 */
+.dy-login-center-div {
+    background-color: rgba(208, 163, 140, 0.53);
+}
+
+/* 登陆页 title */
+.dy-login-title-container-div {
+    color: #fff;
+}
+
+/* 登陆页 输入框icon */
+.dy-login-el-form-item-span {
+    color: skyblue !important;
+    line-height: 44px !important;
+}
+
+/* 登陆页 登陆按钮 */
+.dy-login-button,
+.dy-login-button:hover {
+    padding: 0;
+    font-size: 16px;
+    border-radius: 4px;
+    height: 44px;
+    line-height: 44px;
+    width: 100%;
+    background-color: rgba(255, 216, 103, 0.64);
+    border-color: rgba(255, 216, 103, 0.64);
+    color: #fff;
+}
+
+/* 注册页 */
+.dy-register-container-div {
+    background: url(~@/assets/img/login-bg.jpg);
+    min-height: 100vh;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+/* 注册页 输入区域*/
+.dy-registe-center-div {
+    right: 50%;
+    top: 50%;
+    height: auto;
+    transform: translate3d(50%, -50%, 0);
+    border-radius: 10px;
+    width: 1000px;
+    padding: 30px 30px 40px 30px;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: rgba(208, 163, 140, 0.53);
+}
+
+/* 注册页 title */
+.dy-registe-title-h1 {
+    color: #fff !important;
+    font-size: 28px !important;
+    margin-bottom: 30px !important;
+    text-align: center;
+    line-height: 54px;
+    font-size: 24px;
+}
+
+/* 注册页 注册按钮 */
+.dy-registe-register-button,
+.dy-registe-register-button:hover {
+    width: 100px;
+    height: 44px;
+    color: #fff;
+    font-size: 14px;
+    border-width: 0px;
+    border-style: solid;
+    background-color: rgba(255, 216, 103, 0.64);
+    border-color: rgba(255, 216, 103, 0.64);
+}
+
+/* 注册页 返回登陆按钮 */
+.dy-registe-login-div,
+.dy-registe-login-div:hover {
+    width: 100px;
+    height: 44px;
+    color: #fff;
+    font-size: 14px;
+    border-width: 0px;
+    border-style: solid;
+    border-color: #409EFF;
+    border-radius: 4px;
+    background-color: rgba(249, 104, 104, 0.9);
+}
+

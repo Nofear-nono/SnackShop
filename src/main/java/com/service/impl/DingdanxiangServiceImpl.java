@@ -2,6 +2,7 @@ package com.service.impl;
 
 import com.dao.DingdanMapper;
 import com.dao.DingdanxiangMapper;
+import com.dao.ShangpinMapper;
 import com.dao.UsersMapper;
 import com.entity.*;
 import com.github.pagehelper.PageHelper;

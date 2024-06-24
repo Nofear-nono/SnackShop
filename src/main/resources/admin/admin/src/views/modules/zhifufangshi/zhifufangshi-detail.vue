@@ -14,6 +14,8 @@
         <!-- <el-button class="btn-success" @click="dingdanAddHandler">订单添加</el-button> -->
         <!-- <el-button class="btn-success" @click="dingdanChakanHandler">订单查看</el-button> -->
 
+
+
         <el-button class="btn-close" @click="back()">返回</el-button>
       </el-form-item>
     </el-form>
@@ -239,6 +241,8 @@ export default {
         this.parent.$refs.zhifufangshiDingdanAdd.init(this.id, this.ruleForm.mingcheng);
       });
     },
+
+
   }
 };
 </script>

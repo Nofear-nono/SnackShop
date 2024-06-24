@@ -52,6 +52,10 @@
 				<el-button class="dy-back-button" type="info" @click="back">返回</el-button>
 			</div>
 		</div>
+
+
+		
+
 	</div>
 </template>
 
@@ -76,6 +80,7 @@ export default {
 			xingbieOptions: [],
 			typeOptions: [],
 			shenheOptions: [],
+
 		}
 	},
 	created() {
@@ -131,6 +136,7 @@ export default {
 			if (this.$route.query.sortProperty) {
 				this.sortProperty = this.$route.query.sortProperty;
 			}
+
 		},
 		getList() {
 			let params = {
@@ -163,6 +169,7 @@ export default {
 		toDetail(id) {
 			this.$router.push({ path: '/index/zhifufangshiDetail', query: { id: id } });
 		},
+
 	}
 }
 </script>

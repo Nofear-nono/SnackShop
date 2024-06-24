@@ -4,15 +4,596 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="878ce77f-1c6f-4680-b7b4-fa7c89a10a29" name="Changes" comment="第二版整合">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dao/DingdanMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dao/DingdanxiangMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/entity/DingdanExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/entity/DingdanxiangExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/DingdanService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/DingdanxiangService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/impl/DingdanServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/impl/DingdanxiangServiceImpl.java" afterDir="false" />
+    <list default="true" id="878ce77f-1c6f-4680-b7b4-fa7c89a10a29" name="Changes" comment="终版整合">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/controller/CommonController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/controller/DingdanController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/controller/DingdanxiangController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/controller/DxController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/controller/GonggaoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/controller/GouwucheController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/controller/LianjieController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/controller/LiuyanController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/controller/LunboController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/controller/PingjiaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/controller/PinleiController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/controller/ShangpinController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/controller/ShenqingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/controller/ShoucangController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/controller/XinwenController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dao/DxMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dao/GonggaoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dao/GouwucheMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dao/LianjieMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dao/LiuyanMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dao/LunboMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dao/PingjiaMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dao/PinleiMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dao/ShenqingMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dao/ShoucangMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dao/XinwenMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/entity/DxExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/entity/Gonggao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/entity/GonggaoExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/entity/Gouwuche.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/entity/GouwucheExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/entity/Lianjie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/entity/LianjieExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/entity/Liuyan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/entity/LiuyanExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/entity/Lunbo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/entity/LunboExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/entity/Pingjia.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/entity/PinleiExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/entity/Shenqing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/entity/ShenqingExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/entity/Shoucang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/entity/ShoucangExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/entity/Xinwen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/entity/XinwenExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/DxService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/GonggaoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/GouwucheService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/LianjieService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/LiuyanService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/LunboService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/PingjiaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/PinleiService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/ShangpinService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/ShenqingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/ShoucangService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/XinwenService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/impl/DxServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/impl/GonggaoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/impl/GouwucheServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/impl/LianjieServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/impl/LiuyanServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/impl/LunboServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/impl/PingjiaServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/impl/PinleiServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/impl/ShangpinServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/impl/ShenqingServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/impl/ShoucangServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/impl/XinwenServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/babel.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/dist/css/app.723da4e9.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/dist/css/chunk-vendors.1f0a25b2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/dist/img/404.3648f234.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/dist/img/login-bg.86e3763d.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/npm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/assets/css/dy.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/assets/css/element-variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/assets/css/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/assets/img/404.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/assets/img/Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/assets/img/avator.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/assets/img/bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/assets/img/captcha.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/assets/img/index-menu-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/assets/img/login-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/assets/img/login.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/assets/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/assets/img/password.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/assets/img/role.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/assets/img/username.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/components/SvgIcon/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/components/common/BreadCrumbs.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/components/common/Editor.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/components/common/FileUpload.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/components/common/FileUploadNew.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/components/home/HomeCard.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/components/home/HomeChart.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/components/home/HomeComment.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/components/home/HomeProgress.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/components/index/IndexAside.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/components/index/IndexAsideStatic.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/components/index/IndexAsideSub.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/components/index/IndexHeader.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/components/index/IndexMain.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/404.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/articleEdit.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/banner.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/bug.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/build.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/cfg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/channel.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/chart.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/clipboard.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/code.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/component.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/contacts.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/dashboard.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/date.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/dept.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/dict.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/documentation.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/download.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/drag.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/druid.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/edit.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/education.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/email.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/excel.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/exit-fullscreen.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/eye-open.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/file.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/form.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/fullscreen.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/international.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/job.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/language.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/link.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/list.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/lock.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/log.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/logininfor.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/menu.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/message.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/money.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/monitor.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/nested.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/nested0.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/online.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/operation.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/password.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/password0.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/pdf.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/people.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/peoples.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/phone.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/post.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/qq.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/search.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/sender.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/server.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/shopping.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/shoppingCard.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/size.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/skill.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/star.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/AI.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/AIDeviceLayout.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/EIM.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/VIP.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/agricultureRegister.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/area.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/base.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/batch.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/board.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/board1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/boardConfig.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/cfg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/code.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/company.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/crop.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/crops.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/dashboard.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/dataAbnormal.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/dataLack.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/dept.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/device.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/deviceMonitorData.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/dict.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/diseasesinsect.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/diseasesinsects.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/documentation.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/email.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/environmental.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/eye-open.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/farmingProject.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/finance.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/financeBudget.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/financeReality.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/firm.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/firms.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/harvestBatch.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/harvestDetection.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/harvestManage.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/harvestWorks.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/heavyMetalDetection.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/home.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/inspection.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/internet.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/internetActive.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/log.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/mainSystem.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/mainSystemActive.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/menu.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/monitorEquipment.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/news.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/order.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/password.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/peoples.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/pest.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/pestActive.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/pesticideResidue.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/pests.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/phone.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/plant.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/plants.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/plantsActive.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/residual.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/retroactiveCoding.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/scheme.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/source.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/sourceActive.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/system.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/task.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/tempFarm.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/traceability.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/traceabilityList.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/traceabilityStyle.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/user.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/user0.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/validCode.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/video.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/videoEquipment.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/videoKey.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/vipCustomized.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/warnings.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/svg/workOrder.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/swagger.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/system.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/tab.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/table.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/table0.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/task.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/template.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/theme.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/tool.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/tree-table.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/tree.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/user.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/user0.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/validCode.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/wechat.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svg/zip.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/icons/svgo.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/router/router-static.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/store/store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/utils/api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/utils/base.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/utils/http.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/utils/i18n.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/utils/menu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/utils/storage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/utils/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/utils/validate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/404.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/home.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/login.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/dingdan/chakan.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/dingdan/chakanmy.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/dingdan/dingdan-add.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/dingdan/dingdan-detail.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/dingdan/dingdan-dingdanxiang-add.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/dingdan/dingdan-dingdanxiang-chakan.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/dingdan/dingdan-set.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/dingdan/mana.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/dingdan/manamy.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/dingdanxiang/chakan.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/dingdanxiang/chakanmy.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/dingdanxiang/dingdanxiang-add.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/dingdanxiang/dingdanxiang-detail.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/dingdanxiang/dingdanxiang-set.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/dingdanxiang/mana.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/dingdanxiang/manamy.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/dx/chakan.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/dx/dx-add.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/dx/dx-detail.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/dx/dx-set.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/dx/mana.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/gonggao/chakan.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/gonggao/gonggao-add.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/gonggao/gonggao-detail.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/gonggao/gonggao-set.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/gonggao/mana.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/gouwuche/chakan.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/gouwuche/chakanmy.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/gouwuche/gouwuche-add.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/gouwuche/gouwuche-detail.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/gouwuche/gouwuche-set.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/gouwuche/mana.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/gouwuche/manamy.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/lianjie/chakan.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/lianjie/lianjie-add.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/lianjie/lianjie-detail.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/lianjie/lianjie-set.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/lianjie/mana.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/liuyan/chakan.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/liuyan/chakanmy.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/liuyan/liuyan-add.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/liuyan/liuyan-detail.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/liuyan/liuyan-set.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/liuyan/mana.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/liuyan/manamy.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/lunbo/chakan.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/lunbo/lunbo-add.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/lunbo/lunbo-detail.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/lunbo/lunbo-set.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/lunbo/mana.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/pingjia/chakan.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/pingjia/chakanmy.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/pingjia/mana.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/pingjia/manamy.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/pingjia/pingjia-add.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/pingjia/pingjia-detail.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/pingjia/pingjia-set.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/pinlei/chakan.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/pinlei/mana.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/pinlei/pinlei-add.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/pinlei/pinlei-detail.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/pinlei/pinlei-set.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/pinlei/pinlei-shangpin-add.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/pinlei/pinlei-shangpin-chakan.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/shangpin/chakan.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/shangpin/mana.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/shangpin/shangpin-add.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/shangpin/shangpin-detail.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/shangpin/shangpin-dingdanxiang-add.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/shangpin/shangpin-dingdanxiang-chakan.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/shangpin/shangpin-gouwuche-add.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/shangpin/shangpin-gouwuche-chakan.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/shangpin/shangpin-pingjia-add.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/shangpin/shangpin-pingjia-chakan.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/shangpin/shangpin-set.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/shangpin/shangpin-shoucang-add.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/shangpin/shangpin-shoucang-chakan.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/shenqing/chakan.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/shenqing/chakanmy.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/shenqing/mana.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/shenqing/manamy.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/shenqing/shenqing-add.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/shenqing/shenqing-detail.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/shenqing/shenqing-set.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/shoucang/chakan.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/shoucang/chakanmy.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/shoucang/mana.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/shoucang/manamy.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/shoucang/shoucang-add.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/shoucang/shoucang-detail.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/shoucang/shoucang-set.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/users/chakan.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/users/mana.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/users/users-add.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/users/users-detail.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/users/users-dingdan-add.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/users/users-dingdan-chakan.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/users/users-dingdanxiang-add.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/users/users-dingdanxiang-chakan.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/users/users-gouwuche-add.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/users/users-gouwuche-chakan.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/users/users-liuyan-add.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/users/users-liuyan-chakan.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/users/users-pingjia-add.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/users/users-pingjia-chakan.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/users/users-set.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/users/users-shenqing-add.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/users/users-shenqing-chakan.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/users/users-shoucang-add.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/users/users-shoucang-chakan.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/xinwen/chakan.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/xinwen/mana.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/xinwen/xinwen-add.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/xinwen/xinwen-detail.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/xinwen/xinwen-set.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/register.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/update-password.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/vue.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/public/css/swiper.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/public/js/swiper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/assets/jianshe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/assets/jiaotong.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/assets/nongye.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/assets/weixin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/assets/zhifubao.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/assets/zhongguo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/config/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/dx/dx-add.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/dx/dx-detail.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/dx/dx-mana.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/gonggao/gonggao-add.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/gonggao/gonggao-detail.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/gonggao/gonggao-mana-tp.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/gonggao/gonggao-mana.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/gouwuche/gouwuche-add.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/gouwuche/gouwuche-detail.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/gouwuche/gouwuche-mana-my.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/gouwuche/gouwuche-mana.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/home/home.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/lianjie/lianjie-add.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/lianjie/lianjie-detail.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/lianjie/lianjie-mana.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/liuyan/liuyan-add.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/liuyan/liuyan-detail.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/liuyan/liuyan-mana-my.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/liuyan/liuyan-mana.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/lunbo/lunbo-add.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/lunbo/lunbo-detail.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/lunbo/lunbo-mana-tp.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/lunbo/lunbo-mana.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/pingjia/pingjia-add.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/pingjia/pingjia-detail.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/pingjia/pingjia-mana-my.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/pingjia/pingjia-mana.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/pinlei/pinlei-add.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/pinlei/pinlei-detail.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/pinlei/pinlei-mana.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/pinlei/pinlei-shangpin-add.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/shangpin/shangpin-add.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/shangpin/shangpin-detail.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/shangpin/shangpin-dingdanxiang-add.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/shangpin/shangpin-gouwuche-add.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/shangpin/shangpin-mana-tp.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/shangpin/shangpin-mana.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/shangpin/shangpin-pingjia-add.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/shangpin/shangpin-shoucang-add.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/shenqing/shenqing-add.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/shenqing/shenqing-detail.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/shenqing/shenqing-mana-my.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/shenqing/shenqing-mana.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/shoucang/shoucang-add.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/shoucang/shoucang-detail.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/shoucang/shoucang-mana-my.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/shoucang/shoucang-mana.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/users/users-dingdan-add.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/users/users-dingdanxiang-add.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/users/users-gouwuche-add.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/users/users-liuyan-add.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/users/users-resetpw.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/users/users-shenqing-add.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/users/users-shoucang-add.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/xinwen/xinwen-add.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/xinwen/xinwen-detail.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/xinwen/xinwen-mana-tp.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/xinwen/xinwen-mana.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/DingdanMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/DingdanxiangMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/GonggaoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/GouwucheMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/LianjieMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/LiuyanMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/LunboMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/PingjiaMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/PinleiMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/ShangpinMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/ShenqingMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/ShoucangMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/XinwenMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/UsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/UsersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/ZhifufangshiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/ZhifufangshiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/entity/Dx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/entity/Dx.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/entity/Payment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/entity/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/entity/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/entity/Zhifufangshi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/entity/Zhifufangshi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/service/impl/DingdanxiangServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/service/impl/DingdanxiangServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/service/impl/UsersServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/service/impl/UsersServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/service/impl/ZhifufangshiServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/service/impl/ZhifufangshiServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/zhifufangshi/chakan.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/zhifufangshi/chakan.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/zhifufangshi/mana.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/zhifufangshi/mana.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/zhifufangshi/zhifufangshi-add.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/zhifufangshi/zhifufangshi-add.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/zhifufangshi/zhifufangshi-detail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/zhifufangshi/zhifufangshi-detail.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/zhifufangshi/zhifufangshi-dingdan-add.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/zhifufangshi/zhifufangshi-dingdan-add.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/zhifufangshi/zhifufangshi-dingdan-chakan.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/zhifufangshi/zhifufangshi-dingdan-chakan.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/zhifufangshi/zhifufangshi-set.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/views/modules/zhifufangshi/zhifufangshi-set.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/front/dist/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/front/dist/src/assets/css/canvas-bg-1.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/assets/css/canvas-bg-1.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/front/dist/src/assets/css/canvas-bg-2.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/assets/css/canvas-bg-2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/front/dist/src/assets/css/canvas-bg-3.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/assets/css/canvas-bg-3.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/front/dist/src/assets/css/dy.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/assets/css/dy.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/front/dist/src/assets/css/iconfont.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/assets/css/iconfont.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/front/dist/src/assets/css/iconfont/iconfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/assets/css/iconfont/iconfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/front/dist/src/assets/css/iconfont/iconfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/assets/css/iconfont/iconfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/front/dist/src/assets/css/iconfont/iconfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/assets/css/iconfont/iconfont.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/front/dist/src/assets/img/login-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/assets/img/login-bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/front/dist/src/assets/img/top-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/assets/img/top-bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/front/dist/src/assets/jiahao.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/assets/jiahao.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/front/dist/src/assets/jianshe.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/assets/img/test/jianshe.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/front/dist/src/assets/jiaotong.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/assets/img/test/jiaotong.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/front/dist/src/assets/jiesuo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/assets/jiesuo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/front/dist/src/assets/js/canvas-bg-1.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/assets/js/canvas-bg-1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/front/dist/src/assets/js/canvas-bg-2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/assets/js/canvas-bg-2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/front/dist/src/assets/js/canvas-bg-3.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/assets/js/canvas-bg-3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/front/dist/src/assets/js/canvas-bg-4.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/assets/js/canvas-bg-4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/front/dist/src/assets/js/canvas-bg-5.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/assets/js/canvas-bg-5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/front/dist/src/assets/login-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/assets/login-bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/front/dist/src/assets/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/assets/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/front/dist/src/assets/nongye.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/assets/img/test/nongye.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/front/dist/src/assets/play.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/assets/play.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/front/dist/src/assets/select.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/assets/select.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/front/dist/src/assets/suo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/assets/suo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/front/dist/src/assets/touxiang.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/assets/touxiang.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/front/dist/src/assets/unselect.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/assets/unselect.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/front/dist/src/assets/weixin.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/assets/img/test/weixin.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/front/dist/src/assets/zhifubao.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/assets/img/test/zhifubao.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/front/dist/src/assets/zhongguo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/admin/admin/src/assets/img/test/zhongguo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/front/dist/src/common/storage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/common/storage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/front/dist/src/common/system.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/common/system.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/front/dist/src/common/validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/common/validate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/front/dist/src/components/Breadcrumb.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/components/Breadcrumb.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/front/dist/src/components/CountDown.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/components/CountDown.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/front/dist/src/components/Editor.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/components/Editor.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/front/dist/src/components/FileUpload.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/components/FileUpload.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/front/dist/src/components/FileUploadNew.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/components/FileUploadNew.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/front/dist/src/components/SystemMenu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/components/SystemMenu.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/front/dist/src/config/config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/front/dist/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/front/dist/src/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/front/dist/src/pages/login/login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/login/login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/front/dist/src/pages/users/users-add.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/users/users-add.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/front/dist/src/pages/users/users-detail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/users/users-detail.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/front/dist/src/pages/users/users-mana.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/users/users-mana.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/front/dist/src/pages/users/users-pingjia-add.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/users/users-pingjia-add.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/front/dist/src/router/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/router/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/front/dist/src/store/getters.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/store/getters.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/front/dist/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/front/dist/src/store/modules/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/store/modules/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/zhifufangshi/zhifufangshi-add.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/zhifufangshi/zhifufangshi-add.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/zhifufangshi/zhifufangshi-detail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/zhifufangshi/zhifufangshi-detail.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/zhifufangshi/zhifufangshi-dingdan-add.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/zhifufangshi/zhifufangshi-dingdan-add.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/zhifufangshi/zhifufangshi-mana.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/front/src/pages/zhifufangshi/zhifufangshi-mana.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/DxMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/DxMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/ZhifufangshiMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/ZhifufangshiMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/upload/1582336032199.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/upload/1582336083617.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/upload/1582336130959.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/upload/1582336167097.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/upload/1582337042897.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/upload/1582337050770.jpg@1280w_1l_2o_100sh.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/upload/1582337061757.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/upload/1582337083595.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/upload/1587974665327.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/upload/1587974677876.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/upload/1587974687210.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/upload/1587974712582.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/upload/1587974753813.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/upload/1587974783313.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/upload/1587974805485.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/controller/UsersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controller/UsersController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dao/PaymentMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/entity/Dx.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/entity/Dx.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/entity/Payment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/entity/Users.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/entity/Users.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/service/PaymentService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/service/impl/UsersServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/service/impl/UsersServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mappers/PaymentMapper.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,30 +622,41 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="D:\xiangmu\abo-idea-spr\abo-idea\repository" />
+        <option name="localRepository" value="D:\JavaEE\apache-maven-3.6.3\repository" />
         <option name="mavenHome" value="$PROJECT_DIR$/../../apache-maven-3.6.3" />
         <option name="userSettingsFile" value="D:\JavaEE\apache-maven-3.6.3\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
+    <option name="enabledProfiles">
+      <list>
+        <option value="jdk-1.8" />
+      </list>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
   </component>
   <component name="ProjectId" id="2hV1Pe7rB9j3wE3xaeC7zHKmEu0" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Git/snackshop",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "spring.configuration.checksum": "52ca67cbf32b940f029f958fb6fca630",
-    "vue.rearranger.settings.migration": "true"
-  }
-}]]></component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.util" />
@@ -72,23 +664,24 @@
       <recent name="com.controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\JavaEE\SpringBoot\snackshop\src\main\resources\front\front\dist\src\pages" />
-      <recent name="D:\JavaEE\SpringBoot\snackshop\src\main\resources\front\front\dist" />
-      <recent name="D:\JavaEE\SpringBoot\snackshop\src\main\java\com\config" />
+      <recent name="D:\JavaEE\SpringBoot\snackshop\src\main\resources" />
+      <recent name="D:\JavaEE\SpringBoot\snackshop\src\main\resources\front" />
+      <recent name="D:\JavaEE\SpringBoot\snackshop\src\main\resources\admin" />
+      <recent name="D:\JavaEE\SpringBoot\snackshop\src\main\java\com\service" />
       <recent name="D:\JavaEE\SpringBoot\snackshop\src\main\java\com" />
-      <recent name="D:\JavaEE\SpringBoot\snackshop\src\main\resources\front\front" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\JavaEE\SpringBoot\snackshop\src\main\resources\front" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.entity" />
       <recent name="com.dao" />
+      <recent name="com.entity" />
+      <recent name="com.util" />
       <recent name="com.service" />
       <recent name="com.service.impl" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html (1)">
+  <component name="RunManager" selected="Spring Boot.SpringbootApplication">
     <configuration name="index.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/snackshop/front/front/dist/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -143,6 +736,14 @@
       <workItem from="1718324289770" duration="1595000" />
       <workItem from="1718679193154" duration="58000" />
       <workItem from="1718693074160" duration="427000" />
+      <workItem from="1718929369431" duration="571000" />
+      <workItem from="1719240510245" duration="148000" />
+      <workItem from="1719240752504" duration="1420000" />
+      <workItem from="1719242763649" duration="189000" />
+      <workItem from="1719243162946" duration="520000" />
+      <workItem from="1719244025629" duration="3112000" />
+      <workItem from="1719247258149" duration="422000" />
+      <workItem from="1719247703012" duration="893000" />
     </task>
     <task id="LOCAL-00001" summary="first test">
       <created>1717684218042</created>
@@ -210,7 +811,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/hsy" />
+                        <option value="origin/lxt" />
                       </list>
                     </value>
                   </entry>
@@ -241,13 +842,16 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="first test" />
     <MESSAGE value="second test" />
     <MESSAGE value="ideal test" />
     <MESSAGE value="第一版整合" />
     <MESSAGE value="第二版整合" />
-    <option name="LAST_COMMIT_MESSAGE" value="第二版整合" />
+    <MESSAGE value="终版整合" />
+    <option name="LAST_COMMIT_MESSAGE" value="终版整合" />
   </component>
 </project>

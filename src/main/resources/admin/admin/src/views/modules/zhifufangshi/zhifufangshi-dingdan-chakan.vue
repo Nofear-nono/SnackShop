@@ -153,6 +153,7 @@
             <template slot-scope="scope">
               <!-- <el-button type="primary" icon="el-icon-edit-outline" size="mini" @click="dingdanSet(scope.row.id,scope.row.fahuoshenhe == 'no' ? '发货' : '取消发货','fahuoshenhe',scope.row.fahuoshenhe == 'no' ? 'yes' : 'no')">{{scope.row.fahuoshenhe == 'no' ? '发货' : '取消发货' }}</el-button> -->
 
+
               <el-button type="success" icon="el-icon-info" size="mini" @click="dingdanDetailHandler(scope.row.id)">详情</el-button>
               <!-- <el-button type="primary" icon="el-icon-edit" size="mini" @click="dingdanSetHandler(scope.row.id)">修改</el-button> -->
               <!-- <el-button type="danger" icon="el-icon-delete" size="mini" @click="dingdanDeleteHandler(scope.row.id)">删除</el-button> -->

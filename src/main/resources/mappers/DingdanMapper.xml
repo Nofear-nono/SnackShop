@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dao.DingdanMapper" >
+  <resultMap id="BaseResultMap" type="com.entity.Dingdan" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="bianhao" property="bianhao" jdbcType="VARCHAR" />
+<result column="jine" property="jine" jdbcType="INTEGER" />
+<result column="zhifushenhe" property="zhifushenhe" jdbcType="VARCHAR" />
+<result column="fahuoshenhe" property="fahuoshenhe" jdbcType="VARCHAR" />
+<result column="shouhuoshenhe" property="shouhuoshenhe" jdbcType="VARCHAR" />
+<result column="zhifufangshiid" property="zhifufangshiid" jdbcType="INTEGER" />
+<result column="xingming" property="xingming" jdbcType="VARCHAR" />
+<result column="dianhua" property="dianhua" jdbcType="VARCHAR" />
+<result column="dizhi" property="dizhi" jdbcType="VARCHAR" />
+<result column="shijian" property="shijian" jdbcType="VARCHAR" />
+<result column="wuliu" property="wuliu" jdbcType="VARCHAR" />
+<result column="beizhu" property="beizhu" jdbcType="VARCHAR" />
+<result column="usersid" property="usersid" jdbcType="INTEGER" />
+
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    id,  bianhao, jine, zhifushenhe, fahuoshenhe, shouhuoshenhe, zhifufangshiid, xingming, dianhua, dizhi, shijian, wuliu, beizhu, usersid
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.entity.DingdanExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from dingdan
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from dingdan
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from dingdan
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.entity.DingdanExample" >
+    delete from dingdan
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.entity.Dingdan" >
+    <selectKey resultType="java.lang.Integer" keyProperty="id" order="AFTER" >
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into dingdan (bianhao,jine,zhifushenhe,fahuoshenhe,shouhuoshenhe,zhifufangshiid,xingming,dianhua,dizhi,shijian,wuliu,beizhu,usersid)
+    values (#{bianhao,jdbcType=VARCHAR},#{jine,jdbcType=INTEGER},#{zhifushenhe,jdbcType=VARCHAR},#{fahuoshenhe,jdbcType=VARCHAR},#{shouhuoshenhe,jdbcType=VARCHAR},#{zhifufangshiid,jdbcType=INTEGER},#{xingming,jdbcType=VARCHAR},#{dianhua,jdbcType=VARCHAR},#{dizhi,jdbcType=VARCHAR},#{shijian,jdbcType=VARCHAR},#{wuliu,jdbcType=VARCHAR},#{beizhu,jdbcType=VARCHAR},#{usersid,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.entity.Dingdan" >
+    <selectKey resultType="java.lang.Integer" keyProperty="id" order="AFTER" >
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into dingdan
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="bianhao != null" >
+    bianhao,
+</if>
+<if test="jine != null" >
+    jine,
+</if>
+<if test="zhifushenhe != null" >
+    zhifushenhe,
+</if>
+<if test="fahuoshenhe != null" >
+    fahuoshenhe,
+</if>
+<if test="shouhuoshenhe != null" >
+    shouhuoshenhe,
+</if>
+<if test="zhifufangshiid != null" >
+    zhifufangshiid,
+</if>
+<if test="xingming != null" >
+    xingming,
+</if>
+<if test="dianhua != null" >
+    dianhua,
+</if>
+<if test="dizhi != null" >
+    dizhi,
+</if>
+<if test="shijian != null" >
+    shijian,
+</if>
+<if test="wuliu != null" >
+    wuliu,
+</if>
+<if test="beizhu != null" >
+    beizhu,
+</if>
+<if test="usersid != null" >
+    usersid,
+</if>
+
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="bianhao != null" >
+    #{bianhao,jdbcType=VARCHAR},
+</if>
+<if test="jine != null" >
+    #{jine,jdbcType=INTEGER},
+</if>
+<if test="zhifushenhe != null" >
+    #{zhifushenhe,jdbcType=VARCHAR},
+</if>
+<if test="fahuoshenhe != null" >
+    #{fahuoshenhe,jdbcType=VARCHAR},
+</if>
+<if test="shouhuoshenhe != null" >
+    #{shouhuoshenhe,jdbcType=VARCHAR},
+</if>
+<if test="zhifufangshiid != null" >
+    #{zhifufangshiid,jdbcType=INTEGER},
+</if>
+<if test="xingming != null" >
+    #{xingming,jdbcType=VARCHAR},
+</if>
+<if test="dianhua != null" >
+    #{dianhua,jdbcType=VARCHAR},
+</if>
+<if test="dizhi != null" >
+    #{dizhi,jdbcType=VARCHAR},
+</if>
+<if test="shijian != null" >
+    #{shijian,jdbcType=VARCHAR},
+</if>
+<if test="wuliu != null" >
+    #{wuliu,jdbcType=VARCHAR},
+</if>
+<if test="beizhu != null" >
+    #{beizhu,jdbcType=VARCHAR},
+</if>
+<if test="usersid != null" >
+    #{usersid,jdbcType=INTEGER},
+</if>
+
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.entity.DingdanExample" resultType="java.lang.Integer" >
+    select count(*) from dingdan
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update dingdan
+    <set >
+      <if test="record.id != null" >
+        id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.bianhao != null" >
+    bianhao = #{record.bianhao,jdbcType=VARCHAR},
+</if>
+<if test="record.jine != null" >
+    jine = #{record.jine,jdbcType=INTEGER},
+</if>
+<if test="record.zhifushenhe != null" >
+    zhifushenhe = #{record.zhifushenhe,jdbcType=VARCHAR},
+</if>
+<if test="record.fahuoshenhe != null" >
+    fahuoshenhe = #{record.fahuoshenhe,jdbcType=VARCHAR},
+</if>
+<if test="record.shouhuoshenhe != null" >
+    shouhuoshenhe = #{record.shouhuoshenhe,jdbcType=VARCHAR},
+</if>
+<if test="record.zhifufangshiid != null" >
+    zhifufangshiid = #{record.zhifufangshiid,jdbcType=INTEGER},
+</if>
+<if test="record.xingming != null" >
+    xingming = #{record.xingming,jdbcType=VARCHAR},
+</if>
+<if test="record.dianhua != null" >
+    dianhua = #{record.dianhua,jdbcType=VARCHAR},
+</if>
+<if test="record.dizhi != null" >
+    dizhi = #{record.dizhi,jdbcType=VARCHAR},
+</if>
+<if test="record.shijian != null" >
+    shijian = #{record.shijian,jdbcType=VARCHAR},
+</if>
+<if test="record.wuliu != null" >
+    wuliu = #{record.wuliu,jdbcType=VARCHAR},
+</if>
+<if test="record.beizhu != null" >
+    beizhu = #{record.beizhu,jdbcType=VARCHAR},
+</if>
+<if test="record.usersid != null" >
+    usersid = #{record.usersid,jdbcType=INTEGER},
+</if>
+
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update dingdan
+    set id = #{record.id,jdbcType=INTEGER},
+      bianhao = #{record.bianhao,jdbcType=VARCHAR},jine = #{record.jine,jdbcType=INTEGER},zhifushenhe = #{record.zhifushenhe,jdbcType=VARCHAR},fahuoshenhe = #{record.fahuoshenhe,jdbcType=VARCHAR},shouhuoshenhe = #{record.shouhuoshenhe,jdbcType=VARCHAR},zhifufangshiid = #{record.zhifufangshiid,jdbcType=INTEGER},xingming = #{record.xingming,jdbcType=VARCHAR},dianhua = #{record.dianhua,jdbcType=VARCHAR},dizhi = #{record.dizhi,jdbcType=VARCHAR},shijian = #{record.shijian,jdbcType=VARCHAR},wuliu = #{record.wuliu,jdbcType=VARCHAR},beizhu = #{record.beizhu,jdbcType=VARCHAR},usersid = #{record.usersid,jdbcType=INTEGER}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.entity.Dingdan" >
+    update dingdan
+    <set >
+      <if test="bianhao != null" >
+    bianhao = #{bianhao,jdbcType=VARCHAR},
+</if>
+<if test="jine != null" >
+    jine = #{jine,jdbcType=INTEGER},
+</if>
+<if test="zhifushenhe != null" >
+    zhifushenhe = #{zhifushenhe,jdbcType=VARCHAR},
+</if>
+<if test="fahuoshenhe != null" >
+    fahuoshenhe = #{fahuoshenhe,jdbcType=VARCHAR},
+</if>
+<if test="shouhuoshenhe != null" >
+    shouhuoshenhe = #{shouhuoshenhe,jdbcType=VARCHAR},
+</if>
+<if test="zhifufangshiid != null" >
+    zhifufangshiid = #{zhifufangshiid,jdbcType=INTEGER},
+</if>
+<if test="xingming != null" >
+    xingming = #{xingming,jdbcType=VARCHAR},
+</if>
+<if test="dianhua != null" >
+    dianhua = #{dianhua,jdbcType=VARCHAR},
+</if>
+<if test="dizhi != null" >
+    dizhi = #{dizhi,jdbcType=VARCHAR},
+</if>
+<if test="shijian != null" >
+    shijian = #{shijian,jdbcType=VARCHAR},
+</if>
+<if test="wuliu != null" >
+    wuliu = #{wuliu,jdbcType=VARCHAR},
+</if>
+<if test="beizhu != null" >
+    beizhu = #{beizhu,jdbcType=VARCHAR},
+</if>
+<if test="usersid != null" >
+    usersid = #{usersid,jdbcType=INTEGER},
+</if>
+
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.entity.Dingdan" >
+    update dingdan
+    set bianhao = #{bianhao,jdbcType=VARCHAR},jine = #{jine,jdbcType=INTEGER},zhifushenhe = #{zhifushenhe,jdbcType=VARCHAR},fahuoshenhe = #{fahuoshenhe,jdbcType=VARCHAR},shouhuoshenhe = #{shouhuoshenhe,jdbcType=VARCHAR},zhifufangshiid = #{zhifufangshiid,jdbcType=INTEGER},xingming = #{xingming,jdbcType=VARCHAR},dianhua = #{dianhua,jdbcType=VARCHAR},dizhi = #{dizhi,jdbcType=VARCHAR},shijian = #{shijian,jdbcType=VARCHAR},wuliu = #{wuliu,jdbcType=VARCHAR},beizhu = #{beizhu,jdbcType=VARCHAR},usersid = #{usersid,jdbcType=INTEGER}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

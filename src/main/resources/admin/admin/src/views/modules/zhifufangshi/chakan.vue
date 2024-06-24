@@ -367,7 +367,7 @@ export default {
           this.$message({
             type: 'info',
             message: '已取消'+confirmText
-          });
+          });          
       });
     },
 
@@ -423,7 +423,7 @@ export default {
           this.$message({
             type: 'info',
             message: '已取消'+tname+'操作'
-          });
+          });          
       });
     },
 
@@ -447,7 +447,7 @@ export default {
     },
 
 
-
+ 
   }
 
 };

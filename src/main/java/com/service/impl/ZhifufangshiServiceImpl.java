@@ -17,11 +17,13 @@ import java.util.List;
  * @ClassName ZhifufangshiServiceImpl
  * @Description 支付方式模块业务实现层
  */
-
 @Service
 public class ZhifufangshiServiceImpl implements ZhifufangshiService {
+
     @Autowired
     private ZhifufangshiMapper zhifufangshiMapper;
+
+
 
     //保存或更新支付方式表zhifufangshi
     @Override
@@ -54,7 +56,7 @@ public class ZhifufangshiServiceImpl implements ZhifufangshiService {
             setFatherInfo(info);
         }
         return list;
-    }
+     }
 
     //根据条件(字符类型完全匹配)查询支付方式表zhifufangshi
     @Override
